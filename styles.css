@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.nav_bar {
+    padding:20px;
+    margin-top:30px;
+    background-image: url('rownox.github.io/background.png');
+    height:1500px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -23,6 +30,8 @@ ul {
 li {
     float: left;
 }
+
+
 
 li a {
     display: block;
