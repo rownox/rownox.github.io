@@ -58,6 +58,12 @@ li a:hover:not(.active) {
     background-color: #1fd3da;
 }
 
+h1, h2, h3, h4, h5, h6, span {
+	color: #242424;
+	text-align: center;
+	line-height: 1.25;
+}
+
 h1 {
     font-size: 36px;
 }
