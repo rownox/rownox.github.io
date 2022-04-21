@@ -27,16 +27,17 @@ html {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 30;
 }
 
 li {
     float: left;
-	padding: 100px;
 }
 
 
