@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6, span {
   
 .column.middle {
 	width: 80%;
-	background-color: #ffffff;
+	background-color: #252525;
 }
   
   /* Clear floats after the columns */
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 body {
-    background-color: #242424;
+    background-color: #0c0c0c;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -96,6 +96,8 @@ body {
 
 .center {
 	margin: auto;
+	width: 80%;
+	background-color: #252525;
 }
 
 footer {
