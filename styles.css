@@ -70,11 +70,11 @@ h1, h2, h3, h4, h5, h6, span {
 }
   
 .column.side {
-	width: 25%;
+	width: 10%;
 }
   
 .column.middle {
-	width: 50%;
+	width: 80%;
 }
   
   /* Clear floats after the columns */
@@ -111,12 +111,6 @@ footer {
 .footer__logo-img {
 	width: 70px;
 	height: 100px;
-}
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
 }
 
 .footer__social--list {
