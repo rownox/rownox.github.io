@@ -25,16 +25,6 @@ nav {
     text-align: center;
 }
 
-.title {
-    padding:20px;
-    margin-top:30px;
-    background-image: url('./images/background.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height:1500px;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
