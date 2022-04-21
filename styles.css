@@ -154,6 +154,9 @@ footer {
 }
 
 @media (max-width: 786px) {
+	.column.side, .column.middle {
+		width: 100%;
+	}
 	nav {
 		height: 100px;
 		width: 100%;
