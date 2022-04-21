@@ -67,22 +67,22 @@ h1, h2, h3, h4, h5, h6, span {
 .column {
 	float: left;
 	padding: 10px;
-  }
+}
   
-  .column.side {
+.column.side {
 	width: 25%;
-  }
+}
   
-  .column.middle {
+.column.middle {
 	width: 50%;
-  }
+}
   
   /* Clear floats after the columns */
-  .row:after {
+.row:after {
 	content: "";
 	display: table;
 	clear: both;
-  }
+}
 
 body {
     background-color: #242424;
