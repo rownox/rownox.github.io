@@ -31,9 +31,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 15;
+	padding: 0;
 }
 
 li {
