@@ -60,8 +60,9 @@ li a:hover:not(.active) {
 
 h1, h2, h3, h4, h5, h6, span {
 	color: #242424;
-	text-align: center;
+	text-align: left;
 	line-height: 1.25;
+	padding-left: 100px;
 }
 
 h1 {
