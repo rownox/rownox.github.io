@@ -94,6 +94,10 @@ body {
 
 /* FOOTER */
 
+.center {
+	margin: auto;
+}
+
 footer {
 	background-color: #242424;
 }
