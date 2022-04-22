@@ -28,14 +28,10 @@ ul {
     width: 100%;
 	padding: 0;
 }
-li {
-	padding: 1px;
-}
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -117,7 +113,6 @@ footer {
 	transform: translateX(60px);
 	opacity: 1;
 }
-
 .button {
 	border: none;
 	padding: 16px 32px;
@@ -130,20 +125,19 @@ footer {
 	cursor: pointer;
 	text-decoration-color: white;
   }
-  
-  .button1 {
+.button1 {
 	color: white;
 	background-color: #101010; 
 	border: 2px solid rgb(10, 120, 163);
 	border-radius: 5px;
-  }
+}
   
-  .button1:hover {
+.button1:hover {
 	color: white;
 	background-color: #1fd3da; 
 	color: rgb(10, 120, 163);
 	border-radius: 5px;
-  }
+}
 
 @media (max-width: 786px) {
 	.column.side, .column.middle {
