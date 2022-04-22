@@ -72,16 +72,16 @@ h4 {
 	color: #1fd3da;
 }
 
-.column {
-	float: left;
-	padding: 10px;
-}
 .column.left {
 	width: 40%;
+	padding: 20px;
+	float: left;
 }
 .column.right {
 	width: 60%;
 	border: 5px blue;
+	padding: 20px;
+	float: left;
 }
 .row:after {
 	content: "";
