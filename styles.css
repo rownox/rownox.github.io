@@ -66,6 +66,10 @@ h1, h2, h3, h4, h5, h6, span {
 }
 .h1 {
 	text-size-adjust: 100px;
+	color: #1fd3da;
+}
+.h4 {
+	color: rgb(10, 120, 163);
 }
 
 .column {
