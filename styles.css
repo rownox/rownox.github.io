@@ -62,7 +62,7 @@ h4 {
 	float: left;
 	padding-left: 200px;
 }
-.row:after {
+.row {
 	content: "";
 	display: table;
 	clear: both
