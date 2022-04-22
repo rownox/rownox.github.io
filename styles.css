@@ -80,7 +80,6 @@ h4 {
 }
 .column.right {
 	width: 60%;
-	border: 5px blue;
 	padding: 20px;
 	float: right;
 }
