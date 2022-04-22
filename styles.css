@@ -56,18 +56,21 @@ h1 {
 h4 {
 	color: #1fd3da;
 }
-.container {
-	padding: 64px;
-}
 .column {
-	flex: auto;
 	float: left;
+	padding: 10px;
 }
-.row {
+.right {
+	width: 75%;
+}
+.left {
+	width: 25%;
+}
+.row:after {
 	content: "";
-	display: flex;
+	display: table;
+	clear: both;
 }
-
 body {
     background-color: #101010;
     background-repeat: no-repeat;
