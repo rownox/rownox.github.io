@@ -58,14 +58,12 @@ h4 {
 }
 
 .column {
-	width: 50%;
+	width: flex;
 	float: left;
-	padding-left: 200px;
 }
 .row {
 	content: "";
-	display: table;
-	clear: both
+	display: flex;
 }
 
 body {
