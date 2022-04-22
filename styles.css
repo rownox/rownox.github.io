@@ -59,6 +59,7 @@ li a:hover:not(.active) {
 	color: rgb(10, 120, 163);
 }
 h1 {
+	padding-top: 60px;
 	font-size: 10vw;
 	color: white;
 }
