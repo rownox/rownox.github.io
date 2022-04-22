@@ -6,6 +6,10 @@
 html {
     scroll-behavior: smooth;
 }
+img {
+	width: 100%;
+	height: auto;
+}
 nav {
 	height: 100px;
 	width: 100%;
