@@ -56,11 +56,12 @@ h1 {
 h4 {
 	color: #1fd3da;
 }
-
+.container {
+	padding: 64px;
+}
 .column {
 	width: 50%;
 	float: left;
-	padding-left: 200px;
 }
 .row:after {
 	content: "";
