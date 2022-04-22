@@ -167,12 +167,14 @@ footer {
   }
   
   .button1 {
+	color: white;
 	background-color: #0c0c0c; 
 	border: 2px solid #5beaf7;
 	border-radius: 5px;
   }
   
   .button1:hover {
+	color: white;
 	background-color: #0c0c0c; 
 	color: rgb(10, 120, 163);
 	border-radius: 5px;
