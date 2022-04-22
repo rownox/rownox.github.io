@@ -82,7 +82,7 @@ h4 {
 }
 .column.right {
 	width: 30%;
-	border: blue;
+	border: 5px blue;
 }
 .column.middle {
 	width: 55%;
