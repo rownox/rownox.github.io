@@ -77,12 +77,14 @@ li a:hover:not(.active) {
 	padding: 10px;
 }
   
-.column.side {
+.column.left {
 	width: 15%;
 }
-  
+.column.right {
+	width: 20%;
+}
 .column.middle {
-	width: 70%;
+	width: 65%;
 }
   
   /* Clear floats after the columns */
