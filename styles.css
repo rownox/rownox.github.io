@@ -73,10 +73,6 @@ body {
     background-size: cover;
 }
 
-/* FOOTER */
-.center {
-	margin: auto;
-}
 footer {
 	background-color: #000000;
 	color: rgb(10, 120, 163);
