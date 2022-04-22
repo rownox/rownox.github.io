@@ -74,13 +74,11 @@ h4 {
 
 .column.left {
 	width: 40%;
-	padding: 20px;
 	float: left;
-	padding-left: 250px;
+	padding-left: 200px;
 }
 .column.right {
 	width: 60%;
-	padding: 20px;
 	float: right;
 }
 .row:after {
