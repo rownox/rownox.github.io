@@ -59,7 +59,6 @@ h1, h2, h3, h4, h5, h6, span {
 	color: #ffffff;
 	text-align: left;
 	line-height: 1.25;
-	padding-left: 100px;
 }
 .h1 {
 	text-size-adjust: 100px;
@@ -71,11 +70,11 @@ h1, h2, h3, h4, h5, h6, span {
 }
   
 .column.side {
-	width: 10%;
+	width: 15%;
 }
   
 .column.middle {
-	width: 80%;
+	width: 70%;
 }
   
   /* Clear floats after the columns */
