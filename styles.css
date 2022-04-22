@@ -60,12 +60,12 @@ h4 {
 	padding: 64px;
 }
 .column {
-	width: 50%;
+	flex: auto;
 	float: left;
 }
-.row:after {
+.row {
 	content: "";
-	display: table;
+	display: flex;
 	clear: both
 }
 
