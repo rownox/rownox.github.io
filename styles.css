@@ -155,7 +155,6 @@ footer {
 
 .button {
 	border: none;
-	color: white;
 	padding: 16px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -167,6 +166,7 @@ footer {
   }
   
   .button1 {
+	color: white;
 	border: 2px solid #5beaf7;
 	border-radius: 20px;
   }
