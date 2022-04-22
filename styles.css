@@ -59,11 +59,12 @@ li a:hover:not(.active) {
 	color: rgb(10, 120, 163);
 }
 h1 {
-	text-size-adjust: 100px;
+	font-size: 10vw;
 	color: white;
 }
 h4 {
 	color: #1fd3da;
+	font-size: 5vw;
 }
 
 .container {
