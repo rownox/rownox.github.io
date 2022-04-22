@@ -56,6 +56,9 @@ h1 {
 h4 {
 	color: #1fd3da;
 }
+.container {
+	padding: 70;
+}
 .column {
 	float: left;
 }
