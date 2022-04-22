@@ -82,7 +82,7 @@ h4 {
 	width: 60%;
 	border: 5px blue;
 	padding: 20px;
-	float: left;
+	float: right;
 }
 .row:after {
 	content: "";
