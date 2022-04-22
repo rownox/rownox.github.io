@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, span {
 }
 
 body {
-    background-color: #0c0c0c;
+    background-color: #1e1e1e;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -106,7 +106,7 @@ body {
 }
 
 footer {
-	background-color: #242424;
+	background-color: #000000;
 }
 
 /* .footer__logo{
@@ -174,7 +174,7 @@ footer {
   
   .button1 {
 	color: white;
-	background-color: #0c0c0c; 
+	background-color: #1e1e1e; 
 	border: 2px solid #1fd3da;
 	border-radius: 5px;
   }
