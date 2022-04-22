@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6, span {
   
 .column.middle {
 	width: 80%;
+	background-color: #434343;
 }
   
   /* Clear floats after the columns */
