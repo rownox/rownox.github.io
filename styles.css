@@ -49,10 +49,12 @@ li a {
 
 li a:hover:not(.active) {
     background-color: rgb(10, 120, 163);
+	border-radius: 20px;
 }
 
 .active {
     background-color: #1fd3da;
+	border-radius: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, span {
@@ -167,11 +169,13 @@ footer {
   .button1 {
 	color: black; 
 	border: 2px solid #5beaf7;
+	border-radius: 20px;
   }
   
   .button1:hover {
 	background-color: rgb(10, 120, 163);
 	color: white;
+	border-radius: 20px;
   }
 
 @media (max-width: 786px) {
