@@ -163,10 +163,10 @@ footer {
 	margin: 4px 2px;
 	transition-duration: 0.4s;
 	cursor: pointer;
+	text-decoration-color: white;
   }
   
   .button1 {
-	color: white;
 	border: 2px solid #5beaf7;
 	border-radius: 5px;
   }
