@@ -64,11 +64,11 @@ li a:hover:not(.active) {
 	line-height: 1.25;
 }*/
 
-.h1 {
+h1 {
 	text-size-adjust: 100px;
 	color: #1fd3da;
 }
-.h4 {
+h4 {
 	color: rgb(10, 120, 163);
 }
 
