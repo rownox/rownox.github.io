@@ -84,7 +84,7 @@ h4 {
 .row:after {
 	content: "";
 	display: table;
-	clear: both;
+	clear: both
 }
 
 body {
