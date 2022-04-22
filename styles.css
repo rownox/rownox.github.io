@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
 * {
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-family: Andalé Mono, Helvetica, sans-serif, sans-serif;
     margin:0;
 	box-sizing: border-box;
 }
@@ -8,15 +8,16 @@ html {
     scroll-behavior: smooth;
 }
 img {
-	padding: 10px;
-	width: 50%;
+	width: 60%;
 	height: auto;
-	border-radius: 1%;
+	box-shadow: 0px 0px 1vw #000;
+	border-radius: 0.7vw;
 }
 video {
 	width: 70%;
 	height: auto;
-	border-radius: 2%;
+	box-shadow: 0px 0px 1vw #000;
+	border-radius: 0.7vw;
   }
 nav {
 	height: auto;
@@ -25,7 +26,9 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5px 80px;
+	padding: 0.6vw 5vw;
+	background-color: #000000;
+	box-shadow: 0px 0px 1vw #000;
 }
 .default {
     color: white;
@@ -40,7 +43,7 @@ ul {
 	padding: 0;
 }
 li {
-	padding: 2px;
+	padding: 0.1vw;
 }
 li a {
     display: block;
@@ -52,24 +55,35 @@ li a {
 	font-size: 1vw;
 }
 li a:hover:not(.active) {
-    background-color: rgb(10, 120, 163);
-	border-radius: 5px;
+    background-color: #005c91;
+	border-radius: 0.3vw;
 	transition-duration: 0.4s;
 }
 .active {
-    background-color: #1fd3da;
-	border-radius: 5px;
-	color: rgb(10, 120, 163);
+    background-color: #17c7fc;
+	border-radius: 0.3vw;
+	color: #005c91;
+	
 }
 h1 {
 	padding-top: 60px;
 	padding-bottom: 10px;
-	font-size: 3vw;
-	color: white;
+	font-size: 2.6vw;
+	color: #005c91;
+}
+h2 {
+	padding-bottom: 10px;
+	font-size: 2.7vw;
+	color: #005c91;
+}
+h3 {
+	font-size: 2vw;
+	color: #0092e6;
+	padding-bottom: 60px;
 }
 h4 {
-	color: #1fd3da;
-	font-size: 1vw;
+	color: #0092e6;
+	font-size: 1.2vw;
 }
 
 .container {
@@ -78,12 +92,18 @@ h4 {
 .column {
 	float: left;
 }
-.right {
-	width: 30%;
-}
 .left {
-	width: 70%;
+	width: 55%;
 }
+.middle {
+	width: 25%;
+	padding-right: 50px;
+}
+.right {
+	width: 20%;
+}
+
+
 .row:after {
 	content: "";
 	display: table;
@@ -95,7 +115,7 @@ h4 {
 }
 
 body {
-    background-color: #101010;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -107,7 +127,7 @@ body {
 }
 footer {
 	background-color: #000000;
-	color: rgb(10, 120, 163);
+	color: #005c91;
 }
 .footer__row {
 	display: flex;
@@ -115,6 +135,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding: 2% 0;
+	box-shadow: 0px 0px 1vw #000;
 }
 .footer__logo-img {
 	width: 120px;
@@ -152,29 +173,27 @@ footer {
 
 .button {
 	border: none;
-	padding: 16px 32px;
+	padding: 0.6vw 1.4vw;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	transition-duration: 0.4s;
+	font-size: 1.2vw;
 	cursor: pointer;
-	text-decoration-color: white;
   }
   
   .button1 {
-	color: white;
-	background-color: #101010; 
-	border: 2px solid rgb(10, 120, 163);
-	border-radius: 5px;
+	color: #005c91;
+	background-color: #ffffff; 
+	border: 0.2vw solid #005c91;
+	border-radius: 0.3vw;
   }
   
   .button1:hover {
 	color: white;
-	background-color: #1fd3da; 
-	color: rgb(10, 120, 163);
-	border-radius: 5px;
+	background-color: #17c7fc; 
+	color: #005c91;
+	border-radius: 0.3vw;
+	transition-duration: 0.4s;
   }
 
 @media (max-width: 786px) {
@@ -192,6 +211,12 @@ footer {
 		padding: 0 12px;
 	}
 	h1{
+		font-size: 28px;
+	}
+	h2{
+		font-size: 28px;
+	}
+	h3{
 		font-size: 28px;
 	}
 
