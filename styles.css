@@ -66,10 +66,10 @@ li a:hover:not(.active) {
 
 h1 {
 	text-size-adjust: 100px;
-	color: #1fd3da;
+	color: white;
 }
 h4 {
-	color: rgb(10, 120, 163);
+	color: #1fd3da;
 }
 
 .column {
