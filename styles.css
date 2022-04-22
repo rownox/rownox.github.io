@@ -72,12 +72,12 @@ h4 {
 	color: #1fd3da;
 }
 
-.column.left {
+.column-left {
 	width: 40%;
 	float: left;
 	padding-left: 200px;
 }
-.column.right {
+.column-right {
 	width: 60%;
 	float: left;
 }
