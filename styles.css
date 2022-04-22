@@ -58,13 +58,13 @@ h4 {
 }
 
 .column {
-	flex: 50%;
+	width: 50%;
 	float: left;
 	padding-left: 200px;
 }
 .row:after {
 	content: "";
-	display: flex;
+	display: table;
 	clear: both
 }
 
