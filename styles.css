@@ -49,13 +49,15 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: rgb(10, 120, 163);
+    background-color: #1fd3da;
 	border-radius: 5px;
+	color: rgb(10, 120, 163);
 }
 
 .active {
     background-color: #1fd3da;
 	border-radius: 5px;
+	color: rgb(10, 120, 163);
 }
 
 h1, h2, h3, h4, h5, h6, span {
