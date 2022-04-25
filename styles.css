@@ -49,10 +49,10 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 0.6vw 1vw;
+    padding: 1.2vw 1.4vw;
     text-decoration: none;
     font-family: Arial, sans-serif;
-	font-size: 1vw;
+	font-size: 1.4vw;
 }
 li a:hover:not(.active) {
     background-color: #005c91;
