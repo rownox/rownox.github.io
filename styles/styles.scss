@@ -34,14 +34,13 @@ $white: #ffffff;
 
 body {
   background-color: $primaryBlack;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
 }
 
 .contentSize {
   width: 80%;
   height: 100%;
-  background-color: #625959;
+  background-color: #2b2424;
 }
 
 @media only screen and (max-width:800px) {
