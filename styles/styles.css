@@ -33,7 +33,7 @@ body {
 }
 
 .contentSize {
-  width: 1300px;
+  width: 80%;
   height: 100%;
   margin: auto;
   color: white;
@@ -45,4 +45,4 @@ body {
 }
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
-}/*# sourceMappingURL=styles.css.map */
+}
