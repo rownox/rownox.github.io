@@ -34,7 +34,11 @@ html, body {
   text-decoration: none;
 }
 .navbar li button {
+  font-size: 17px;
   padding: 10px;
+  border-radius: 30px;
+  background-color: transparent;
+  border-bottom-color: white;
 }
 
 #navback {
