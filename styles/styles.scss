@@ -11,6 +11,18 @@ $white: #ffffff;
   font-family: ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI,Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 }
 
+html, body {
+  background-color: $primaryBlack;
+  height: 100vh;
+}
+
+.mainContent {
+  width: 80%;
+  height: 100%;
+  background-color: #2b2424;
+  margin: auto;
+}
+
 /* NAVIGATION */
 .navbar {
   padding: 30px;
@@ -31,18 +43,13 @@ $white: #ffffff;
   background-color: $navBar;
 }
 
-html, body {
-  background-color: $primaryBlack;
-  min-height: 100vh;
+.buttonContainer {
+  .buttons {
+    button {
+      padding: 20px;
+    }
+  }
 }
-
-.contentSize {
-  width: 80%;
-  height: 100%;
-  background-color: #2b2424;
-  margin: auto;
-}
-
 @media only screen and (max-width:800px) {
   /* For tablets: */
 
