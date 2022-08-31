@@ -20,7 +20,6 @@ html, body {
 
 /* NAVIGATION */
 .navbar {
-  padding: 30px;
   list-style-type: none;
 }
 .navbar li {
