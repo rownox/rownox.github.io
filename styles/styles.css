@@ -35,7 +35,8 @@ html, body {
 }
 .navbar li button {
   font-size: 17px;
-  padding: 10px;
+  height: 20px;
+  width: 30px;
   border-radius: 30px;
   background-color: transparent;
   border-bottom-color: white;
