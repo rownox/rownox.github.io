@@ -30,6 +30,7 @@ html, body {
   li {
     display: inline;
     a {
+      float: left;
       color: $white;
       font-size: 17px;
       font-weight: 600;
@@ -37,6 +38,7 @@ html, body {
       text-decoration: none;
     }
     button {
+      float: right;
       width: 130px;
       height: 40px;
       display: flex;
@@ -87,7 +89,6 @@ html, body {
     }
   }
 }
-
 
 @media only screen and (max-width:800px) {
   /* For tablets: */

@@ -28,6 +28,7 @@ html, body {
   display: inline;
 }
 .navbar li a {
+  float: left;
   color: #ffffff;
   font-size: 17px;
   font-weight: 600;
@@ -35,6 +36,7 @@ html, body {
   text-decoration: none;
 }
 .navbar li button {
+  float: right;
   width: 130px;
   height: 40px;
   display: flex;
