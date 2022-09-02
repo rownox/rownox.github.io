@@ -1,6 +1,7 @@
 $primaryBlack: rgb(20, 24, 31);;
 $navBar: #0f0f0f;
 $white: #ffffff;
+$secondaryWhite: #bbbbbb;
 
 * {
   margin: 0;
@@ -18,7 +19,7 @@ html, body {
 }
 
 .mainContent {
-  width: 75%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
 }
@@ -99,17 +100,50 @@ html, body {
   }
 }
 
+.introduction {
+  margin-top: 6rem;
+  height: 20rem;
+  width: 100%;
+  h1 {
+    color: $secondaryWhite;
+    font-size: x-large;
+  }
+  h2 {
+    color: $white;
+    font-size: xx-large;
+  }
+}
+
+@mixin widget {
+  width: 30rem;
+  margin: 0 5rem;
+}
+@mixin widgetButton {
+  color: $white;
+}
+
 .widgets {
-  margin: auto;
+  margin-top: 5rem;
+  width: 100%;
+  height: 35rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
   .graphicsWidget {
-    button {
-      
+    @include widget;
+    a {
+      @include widgetButton;
     }
   }
   .codingWidget {
-    button {
-
+    @include widget;
+    a {
+      @include widgetButton;
     }
+  }
+  h1 {
+    color: $white;
+    font-size: xx-large;
   }
 }
 

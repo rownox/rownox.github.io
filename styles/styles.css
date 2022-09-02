@@ -14,7 +14,7 @@ html, body {
 }
 
 .mainContent {
-  width: 75%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
 }
@@ -92,9 +92,47 @@ html, body {
   width: 95%;
 }
 
-.widgets {
-  margin: auto;
+.introduction {
+  margin-top: 6rem;
+  height: 20rem;
+  width: 100%;
 }
+.introduction h1 {
+  color: #bbbbbb;
+  font-size: x-large;
+}
+.introduction h2 {
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+.widgets {
+  margin-top: 5rem;
+  width: 100%;
+  height: 35rem;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+.widgets .graphicsWidget {
+  width: 30rem;
+  margin: 0 5rem;
+}
+.widgets .graphicsWidget a {
+  color: #ffffff;
+}
+.widgets .codingWidget {
+  width: 30rem;
+  margin: 0 5rem;
+}
+.widgets .codingWidget a {
+  color: #ffffff;
+}
+.widgets h1 {
+  color: #ffffff;
+  font-size: xx-large;
+}
+
 @media only screen and (max-width: 800px) {
   /* For tablets: */
 }
