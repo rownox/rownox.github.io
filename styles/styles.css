@@ -9,55 +9,87 @@
 }
 
 html, body {
-  background-color: #000000;
+  background-color: rgb(20, 24, 31);
   height: 100vh;
 }
 
 .mainContent {
-  width: 1300px;
+  width: 75%;
   height: 100%;
   margin: 0 auto;
 }
 
-/* NAVIGATION */
+/* NAVBAR */
 .navbar {
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  height: 5rem;
+  align-items: center;
+  /* NAVIGATION BUTTONS*/
+  /* CONTACT BUTTON */
 }
 .navbar .navigation {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.navbar .contact {
-  align-items: center;
+.navbar .navigation li {
+  list-style-type: none;
 }
-.navbar li {
-  flex-direction: row;
-}
-.navbar li a {
+.navbar .navigation li a {
   color: #ffffff;
   font-size: 17px;
   font-weight: 500;
-  margin: 30px 120px 30px 0;
+  margin: 0 120px 0 0;
   text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 6px 0;
+  letter-spacing: 1px;
 }
-.navbar li button {
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 30px;
+.navbar .navigation li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navbar .navigation li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.navbar .contact li {
+  list-style-type: none;
+}
+.navbar .contact li a {
   color: #ffffff;
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
-  overflow: hidden;
-  transition: 0.5s;
+  letter-spacing: 0;
+  transition: all 280ms ease-in-out;
+  display: block;
+  width: 100%;
+  letter-spacing: 1px;
 }
-
-#navback {
-  background-color: #0f0f0f;
+.navbar .contact li a:hover {
+  margin: 0;
+}
+.navbar .contact li a:after, .navbar .contact li a:before {
+  border: 1px solid rgba(255, 255, 255, 0);
+  content: "";
+  display: block;
+  transition: all 280ms ease-in-out;
+  width: 0;
+  margin: 5px auto;
+}
+.navbar .contact li a:hover:after, .navbar .contact li a:hover:before {
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 95%;
 }
 
 .buttonContainer {
@@ -66,44 +98,6 @@ html, body {
 .buttonContainer .buttons button {
   padding: 18px;
   font-size: 17px;
-}
-
-.btn-2 {
-  letter-spacing: 0;
-  text-decoration: none;
-  justify-content: center;
-}
-
-.btn-2:hover, .btn-2:active {
-  letter-spacing: 5px;
-}
-
-.btn-2:after,
-.btn-2:before {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border: 1px solid rgba(255, 255, 255, 0);
-  bottom: 0px;
-  content: " ";
-  display: block;
-  margin: 0 auto;
-  position: relative;
-  transition: all 280ms ease-in-out;
-  width: 0;
-}
-
-.btn-2:hover:after, .btn-2:hover:before {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-color: #fff;
-  transition: width 350ms ease-in-out;
-  width: 70%;
-}
-
-.btn-2:hover:before {
-  bottom: auto;
-  top: 0;
-  width: 70%;
 }
 
 @media only screen and (max-width: 800px) {
