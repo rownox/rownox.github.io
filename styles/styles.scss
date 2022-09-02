@@ -51,7 +51,7 @@ html, body {
         position: absolute;
         width: 100%;
         transform: scaleX(0);
-        height: 3px;
+        height: 2.5px;
         bottom: 0;
         left: 0;
         background-color: $white;
@@ -83,31 +83,37 @@ html, body {
         margin: 0;
       }
       a:after, a:before {
-        border: 1px solid rgba(#fff, 0);
         content: '';
+        border: 1px solid rgba($white, 0);
         display: block;
-        transition: all 280ms ease-in-out;
+        transition: all 0.25s ease-in-out;
         width: 0;
         margin: 5px auto;
       }
       a:hover:after, a:hover:before {
         border-color: #fff;
-        transition: width 350ms ease-in-out;
+        transition: width 0.25s ease-in-out;
         width: 95%;
       }
     }
   }
 }
 
-.buttonContainer {
+.widgets {
   margin: auto;
-  .buttons {
+  .graphicsWidget {
     button {
-      padding: 18px;
-      font-size: 17px;
+      
+    }
+  }
+  .codingWidget {
+    button {
+
     }
   }
 }
+
+
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
