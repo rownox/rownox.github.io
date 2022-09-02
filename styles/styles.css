@@ -47,9 +47,6 @@ html, body {
 .navbar li button {
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 30px;
   color: #ffffff;
   font-size: 17px;
@@ -57,8 +54,6 @@ html, body {
   text-decoration: none;
   overflow: hidden;
   transition: 0.5s;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
 }
 
 #navback {
@@ -71,6 +66,44 @@ html, body {
 .buttonContainer .buttons button {
   padding: 18px;
   font-size: 17px;
+}
+
+.btn-2 {
+  letter-spacing: 0;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.btn-2:hover, .btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after, .btn-2:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
 }
 
 @media only screen and (max-width: 800px) {
