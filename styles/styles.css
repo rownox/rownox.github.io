@@ -4,7 +4,6 @@
   border: 0;
   outline: 0;
   font-size: 100%;
-  overflow: hidden;
   font-family: ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 }
 
@@ -14,7 +13,7 @@ html, body {
 }
 
 .mainContent {
-  width: 70%;
+  width: 1280px;
   height: 100%;
   margin: 0 auto;
 }
@@ -38,7 +37,7 @@ html, body {
   color: #ffffff;
   font-size: 17px;
   font-weight: 500;
-  margin: 0 120px 0 0;
+  margin: 0 100px 0 0;
   text-decoration: none;
   display: block;
   position: relative;
@@ -50,7 +49,7 @@ html, body {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2.5px;
+  height: 3px;
   bottom: 0;
   left: 0;
   background-color: #ffffff;
@@ -68,9 +67,6 @@ html, body {
   color: #ffffff;
   font-size: 17px;
   font-weight: 500;
-  text-decoration: none;
-  letter-spacing: 0;
-  transition: all 280ms ease-in-out;
   display: block;
   width: 100%;
   letter-spacing: 1px;
@@ -80,30 +76,61 @@ html, body {
 }
 .navbar .contact li a:after, .navbar .contact li a:before {
   content: "";
-  border: 1px solid rgba(255, 255, 255, 0);
+  border: 1.5px solid rgba(255, 255, 255, 0);
   display: block;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 0;
   margin: 5px auto;
 }
 .navbar .contact li a:hover:after, .navbar .contact li a:hover:before {
-  border-color: #fff;
-  transition: width 0.25s ease-in-out;
+  background-color: #ffffff;
+  transition: width 0.2s ease-in-out;
   width: 95%;
 }
 
 .introduction {
   margin-top: 6rem;
-  height: 20rem;
   width: 100%;
 }
 .introduction h1 {
-  color: #bbbbbb;
+  color: #f65b5b;
   font-size: x-large;
+  font-weight: 400;
+}
+.introduction h1 strong {
+  font-size: 33px;
+  font-weight: 600;
 }
 .introduction h2 {
   color: #ffffff;
-  font-size: xx-large;
+  font-size: 60px;
+  margin: 0.5rem 0;
+}
+.introduction p {
+  margin: 2rem 0 4rem 0;
+  color: #969899;
+  font-size: 23px;
+  line-height: 2.5rem;
+}
+.introduction a {
+  font-size: x-large;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 15px 20px;
+  border: 1px solid #969899;
+  outline: 0 solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.introduction a:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
 }
 
 .widgets {
@@ -116,14 +143,12 @@ html, body {
 }
 .widgets .graphicsWidget {
   width: 30rem;
-  margin: 0 5rem;
 }
 .widgets .graphicsWidget a {
   color: #ffffff;
 }
 .widgets .codingWidget {
   width: 30rem;
-  margin: 0 5rem;
 }
 .widgets .codingWidget a {
   color: #ffffff;
@@ -133,8 +158,19 @@ html, body {
   font-size: xx-large;
 }
 
+@media only screen and (max-width: 1280px) {
+  /* For smaller screens: */
+  html, body {
+    background-color: #f65b5b;
+    height: 100vh;
+  }
+}
 @media only screen and (max-width: 800px) {
   /* For tablets: */
+  html, body {
+    background-color: #f65b5b;
+    height: 100vh;
+  }
 }
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
