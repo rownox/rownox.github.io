@@ -16,6 +16,7 @@ $red1: #f65b5b;
 html, body {
   background-color: $primaryBlack;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 .mainContent {
