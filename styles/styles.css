@@ -115,16 +115,17 @@ html, body {
   font-size: 23px;
   line-height: 2.5rem;
 }
-.introduction .introButton {
+.introduction .introButtonContainer {
+  height: 10rem;
   display: flex;
   justify-content: left;
 }
-.introduction .introButton a {
+.introduction .introButtonContainer .introButton a {
   width: 180px;
   height: 60px;
   position: absolute;
 }
-.introduction .introButton a svg {
+.introduction .introButtonContainer .introButton a svg {
   position: absolute;
   left: 0;
   top: 0;
@@ -134,7 +135,7 @@ html, body {
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
 }
-.introduction .introButton a .btn {
+.introduction .introButtonContainer .introButton a .btn {
   width: 180px;
   height: 60px;
   cursor: pointer;
@@ -143,20 +144,38 @@ html, body {
   outline: none;
   transition: 1s ease-in-out;
 }
-.introduction .introButton a .btn:hover {
+.introduction .introButtonContainer .introButton a .btn:hover {
   transition: 1s ease-in-out;
   background: #f65b5b;
 }
-.introduction .introButton a .btn:hover svg {
+.introduction .introButtonContainer .introButton a .btn:hover svg {
   stroke-dashoffset: -480;
 }
-.introduction .introButton a .btn span {
+.introduction .introButtonContainer .introButton a .btn span {
   color: white;
   font-size: 18px;
   font-weight: 100;
   text-align: center;
 }
-
+.introduction .introLinks {
+  flex-direction: row;
+  display: flex;
+  width: 17rem;
+  justify-content: space-between;
+  align-content: center;
+}
+.introduction .introLinks .introLine {
+  margin-top: 1rem;
+  width: 8rem;
+  background-color: #969899;
+  height: 0.12rem;
+}
+.introduction .introLinks .linkButton {
+  border-radius: 30px;
+  border: 3px #969899 solid;
+  height: 30px;
+  width: 30px;
+}
 .widgets {
   margin-top: 5rem;
   width: 100%;

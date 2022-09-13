@@ -124,44 +124,69 @@ html, body {
       line-height: 2.5rem;
     }
   }
-  .introButton {
+  .introButtonContainer {
+    height: 10rem;
     display: flex;
     justify-content: left;
-    a {
-      width: 180px;
-      height: 60px;
-      position: absolute;
-      svg {
-        position: absolute;
-        left: 0;
-        top: 0;
-        fill: none;
-        stroke: #fff;
-        stroke-dasharray: 150 480;
-        stroke-dashoffset: 150;
-        transition: 1s ease-in-out;
-      }
-      .btn {
+    .introButton {
+      a {
         width: 180px;
         height: 60px;
-        cursor: pointer;
-        background: transparent;
-        border: 1px solid $red1;
-        outline: none;
-        transition: 1s ease-in-out;
+        position: absolute;
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          fill: none;
+          stroke: #fff;
+          stroke-dasharray: 150 480;
+          stroke-dashoffset: 150;
+          transition: 1s ease-in-out;
+        }
+        .btn {
+          width: 180px;
+          height: 60px;
+          cursor: pointer;
+          background: transparent;
+          border: 1px solid $red1;
+          outline: none;
+          transition: 1s ease-in-out;
+        }
+        .btn:hover {
+          transition: 1s ease-in-out;
+          background: $red1;
+        }
+        .btn:hover svg {
+          stroke-dashoffset: -480;
+        }
+        .btn span {
+          color: white;
+          font-size: 18px;
+          font-weight: 100;
+          text-align: center;
+        }
       }
-      .btn:hover {
-        transition: 1s ease-in-out;
-        background: $red1;
-      }
-      .btn:hover svg {
-        stroke-dashoffset: -480;
-      }
-      .btn span {
-        color: white;
-        font-size: 18px;
-        font-weight: 100;
-        text-align: center;
+    }
+  }
+  .introLinks {
+    flex-direction: row;
+    display: flex;
+    width: 17rem;
+    justify-content: space-between;
+    align-content: center;
+    .introLine {
+      margin-top: 1rem;
+      width: 8rem;
+      background-color: $secondaryWhite;
+      height: 0.12rem;
+    }
+    .linkButton {
+      border-radius: 30px;
+      border: 3px $secondaryWhite solid;
+      height: 30px;
+      width: 30px;
+      a {
+
       }
     }
   }
