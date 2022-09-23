@@ -91,41 +91,67 @@ html, body {
 
 .introduction {
   margin-top: 6rem;
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60rem;
 }
-.introduction .introText h1 {
+.introduction .right {
+  height: 100%;
+}
+.introduction .right .introLinksContainer {
+  padding-top: 1rem;
+}
+.introduction .right .introLinksContainer .introLinks .top .introLine {
+  width: 0.12rem;
+  background-color: #969899;
+  margin: 0.2rem 1rem;
+  height: 2rem;
+}
+.introduction .right .introLinksContainer .introLinks .top .linkButton {
+  border-radius: 30px;
+  border: 3px #969899 solid;
+  height: 30px;
+  width: 30px;
+}
+.introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
+  width: 0.12rem;
+  background-color: #969899;
+  margin: 0.2rem 1rem;
+  height: 100%;
+}
+.introduction .left .introTextContainer {
+  justify-content: flex-start;
+}
+.introduction .left .introTextContainer .introText h1 {
   color: #f65b5b;
   font-size: x-large;
   font-weight: 400;
 }
-.introduction .introText h1 strong {
+.introduction .left .introTextContainer .introText h1 strong {
   font-size: 33px;
   font-weight: 600;
 }
-.introduction .introText h2 {
+.introduction .left .introTextContainer .introText h2 {
   color: #ffffff;
   font-size: 60px;
   margin: 0.5rem 0;
 }
-.introduction .introText p {
+.introduction .left .introTextContainer .introText p {
   margin: 2rem 0 4rem 0;
   color: #969899;
   font-size: 23px;
   line-height: 2.5rem;
 }
-.introduction .introButtonContainer {
+.introduction .left .introButtonContainer {
   height: 10rem;
-  display: flex;
-  justify-content: left;
 }
-.introduction .introButtonContainer .introButton a {
+.introduction .left .introButtonContainer .introButton a {
   width: 180px;
   height: 60px;
   position: absolute;
 }
-.introduction .introButtonContainer .introButton a svg {
+.introduction .left .introButtonContainer .introButton a svg {
   position: absolute;
   left: 0;
   top: 0;
@@ -135,7 +161,7 @@ html, body {
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
 }
-.introduction .introButtonContainer .introButton a .btn {
+.introduction .left .introButtonContainer .introButton a .btn {
   width: 180px;
   height: 60px;
   cursor: pointer;
@@ -144,38 +170,20 @@ html, body {
   outline: none;
   transition: 1s ease-in-out;
 }
-.introduction .introButtonContainer .introButton a .btn:hover {
+.introduction .left .introButtonContainer .introButton a .btn:hover {
   transition: 1s ease-in-out;
   background: #f65b5b;
 }
-.introduction .introButtonContainer .introButton a .btn:hover svg {
+.introduction .left .introButtonContainer .introButton a .btn:hover svg {
   stroke-dashoffset: -480;
 }
-.introduction .introButtonContainer .introButton a .btn span {
+.introduction .left .introButtonContainer .introButton a .btn span {
   color: white;
   font-size: 18px;
   font-weight: 100;
   text-align: center;
 }
-.introduction .introLinks {
-  flex-direction: row;
-  display: flex;
-  width: 17rem;
-  justify-content: space-between;
-  align-content: center;
-}
-.introduction .introLinks .introLine {
-  margin-top: 1rem;
-  width: 8rem;
-  background-color: #969899;
-  height: 0.12rem;
-}
-.introduction .introLinks .linkButton {
-  border-radius: 30px;
-  border: 3px #969899 solid;
-  height: 30px;
-  width: 30px;
-}
+
 .widgets {
   margin-top: 5rem;
   width: 100%;

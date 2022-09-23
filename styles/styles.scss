@@ -25,6 +25,18 @@ html, body {
   margin: 0 auto;
 }
 
+@mixin widget {
+  width: 30rem;
+}
+@mixin widgetButton {
+  color: $white;
+}
+@mixin line {
+  width: 0.12rem;
+  background-color: $secondaryWhite;
+  margin: 0.2rem 1rem;
+}
+
 /* NAVBAR */
 .navbar {
   display: flex;
@@ -99,109 +111,108 @@ html, body {
 
 .introduction {
   margin-top: 6rem;
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  .introText {
-    h1 {
-      color: $red1;
-      font-size: x-large;
-      font-weight: 400;
-      strong {
-        font-size: 33px;
-        font-weight: 600;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60rem;
+  .right {
+    height: 100%;
+    .introLinksContainer {
+      padding-top: 1rem;
+      .introLinks {
+        .top {
+          .introLine {
+            @include line;
+            height: 2rem;
+          }
+          .linkButton {
+            border-radius: 30px;
+            border: 3px $secondaryWhite solid;
+            height: 30px;
+            width: 30px;
+          }
+        }
+        .bottom {
+          .introLastLine {
+            @include line;
+            height: 100%;
+          }
+        }
       }
     }
-    h2 {
-      color: $white;
-      font-size: 60px;
-      margin: 0.5rem 0;
-    }
-    p {
-      margin: 2rem 0 4rem 0;
-      color: $secondaryWhite;
-      font-size: 23px;
-      line-height: 2.5rem;
-    }
   }
-  .introButtonContainer {
-    height: 10rem;
-    display: flex;
-    justify-content: left;
-    .introButton {
-      a {
-        width: 180px;
-        height: 60px;
-        position: absolute;
-        svg {
-          position: absolute;
-          left: 0;
-          top: 0;
-          fill: none;
-          stroke: #fff;
-          stroke-dasharray: 150 480;
-          stroke-dashoffset: 150;
-          transition: 1s ease-in-out;
+  .left {
+    .introTextContainer {
+      justify-content: flex-start;
+      .introText {
+        h1 {
+          color: $red1;
+          font-size: x-large;
+          font-weight: 400;
+          strong {
+            font-size: 33px;
+            font-weight: 600;
+          }
         }
-        .btn {
+        h2 {
+          color: $white;
+          font-size: 60px;
+          margin: 0.5rem 0;
+        }
+        p {
+          margin: 2rem 0 4rem 0;
+          color: $secondaryWhite;
+          font-size: 23px;
+          line-height: 2.5rem;
+        }
+      }
+    }
+    .introButtonContainer {
+      height: 10rem;
+      .introButton {
+        a {
           width: 180px;
           height: 60px;
-          cursor: pointer;
-          background: transparent;
-          border: 1px solid $red1;
-          outline: none;
-          transition: 1s ease-in-out;
+          position: absolute;
+          svg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            fill: none;
+            stroke: #fff;
+            stroke-dasharray: 150 480;
+            stroke-dashoffset: 150;
+            transition: 1s ease-in-out;
+          }
+          .btn {
+            width: 180px;
+            height: 60px;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid $red1;
+            outline: none;
+            transition: 1s ease-in-out;
+          }
+          .btn:hover {
+            transition: 1s ease-in-out;
+            background: $red1;
+          }
+          .btn:hover svg {
+            stroke-dashoffset: -480;
+          }
+          .btn span {
+            color: white;
+            font-size: 18px;
+            font-weight: 100;
+            text-align: center;
+          }
         }
-        .btn:hover {
-          transition: 1s ease-in-out;
-          background: $red1;
-        }
-        .btn:hover svg {
-          stroke-dashoffset: -480;
-        }
-        .btn span {
-          color: white;
-          font-size: 18px;
-          font-weight: 100;
-          text-align: center;
-        }
-      }
-    }
-  }
-  .introLinks {
-    flex-direction: row;
-    display: flex;
-    width: 17rem;
-    justify-content: space-between;
-    align-content: center;
-    .introLine {
-      margin-top: 1rem;
-      width: 8rem;
-      background-color: $secondaryWhite;
-      height: 0.12rem;
-    }
-    .linkButton {
-      border-radius: 30px;
-      border: 3px $secondaryWhite solid;
-      height: 30px;
-      width: 30px;
-      a {
-
       }
     }
   }
 }
 
-@mixin widget {
-  width: 30rem;
-}
-@mixin widgetButton {
-  color: $white;
-}
-@mixin introButtonSize {
-  width: 110px;
-  height: 50px;
-}
+
 
 .widgets {
   margin-top: 5rem;
