@@ -1,6 +1,7 @@
 $primaryBlack: rgb(20, 24, 31);;
 $navBar: #0f0f0f;
 $white: #ffffff;
+$white2: rgb(194, 206, 215);
 $secondaryWhite: #969899;
 $red1: #f65b5b;
 
@@ -118,8 +119,9 @@ html, body {
   .right {
     height: 100%;
     .introLinksContainer {
-      padding-top: 1rem;
+      height: 100%;
       .introLinks {
+        height: 100%;
         .top {
           .introLine {
             @include line;
@@ -133,6 +135,7 @@ html, body {
           }
         }
         .bottom {
+          height: 32%;
           .introLastLine {
             @include line;
             height: 100%;
@@ -142,8 +145,8 @@ html, body {
     }
   }
   .left {
+    height: 100%;
     .introTextContainer {
-      justify-content: flex-start;
       .introText {
         h1 {
           color: $red1;
@@ -212,8 +215,6 @@ html, body {
   }
 }
 
-
-
 .widgets {
   margin-top: 5rem;
   width: 100%;
@@ -239,23 +240,56 @@ html, body {
   }
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1000px) {
   /* For tablets: */
 
   .introduction {
-    .introText {
-      text-align: center;
-      h2 {
-        font-size: 50px;
+    .left {
+      width: 100%;
+      .introTextContainer {
+        width: 100%;
+        .introText {
+          text-align: center;
+          h1 {
+            font-size: x-large;
+            font-weight: 400;
+            strong {
+              font-size: 33px;
+              font-weight: 600;
+            }
+          }
+          h2 {
+            font-size: 50px;
+            margin: 0.5rem 0;
+          }
+          p {
+            margin: 2rem 0 4rem 0;
+            font-size: 20px;
+            line-height: 2rem;
+          }
+        }
       }
-      p {
-        font-size: 20px;
+      .introButtonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .introButton {
+          a {
+            position: relative;
+            svg {
+              display: none;
+            }
+            .btn:hover {
+              background: $red1;
+            }
+          }
+        }
       }
     }
-    .introButton {
-      justify-content: center;
+    .right {
+      display: none;
     }
-    
   }
   .navbar {
     justify-content: center;
@@ -299,25 +333,49 @@ html, body {
   }
 
   .introduction {
-    .introText {
-      text-align: center;
-      h1 {
-        font-size: 20px;
-        strong {
-          font-size: 27px;
+    .left {
+      .introTextContainer {
+        .introText {
+          h1 {
+            font-size: 18px;
+            font-weight: 400;
+            strong {
+              font-size: 25px;
+              font-weight: 600;
+            }
+          }
+          h2 {
+            font-size: 30px;
+            margin: 0.5rem 0;
+          }
+          p {
+            margin: 2rem 0 4rem 0;
+            font-size: 15px;
+            line-height: 2rem;
+          }
+          .c {
+            color: $white2;
+          }
         }
       }
-      h2 {
-        font-size: 30px;
-      }
-      p {
-        font-size: 15px;
-        line-height: 1.5rem;
+      .introButtonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .introButton {
+          a {
+            position: relative;
+            svg {
+              display: none;
+            }
+            .btn:hover {
+              background: $red1;
+            }
+          }
+        }
       }
     }
-    .introButton {
-      justify-content: center;
-    } 
   }
 }
 

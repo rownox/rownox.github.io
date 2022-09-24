@@ -100,7 +100,10 @@ html, body {
   height: 100%;
 }
 .introduction .right .introLinksContainer {
-  padding-top: 1rem;
+  height: 100%;
+}
+.introduction .right .introLinksContainer .introLinks {
+  height: 100%;
 }
 .introduction .right .introLinksContainer .introLinks .top .introLine {
   width: 0.12rem;
@@ -114,14 +117,17 @@ html, body {
   height: 30px;
   width: 30px;
 }
+.introduction .right .introLinksContainer .introLinks .bottom {
+  height: 32%;
+}
 .introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
   width: 0.12rem;
   background-color: #969899;
   margin: 0.2rem 1rem;
   height: 100%;
 }
-.introduction .left .introTextContainer {
-  justify-content: flex-start;
+.introduction .left {
+  height: 100%;
 }
 .introduction .left .introTextContainer .introText h1 {
   color: #f65b5b;
@@ -209,19 +215,51 @@ html, body {
   font-size: xx-large;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   /* For tablets: */
-  .introduction .introText {
+  .introduction .left {
+    width: 100%;
+  }
+  .introduction .left .introTextContainer {
+    width: 100%;
+  }
+  .introduction .left .introTextContainer .introText {
     text-align: center;
   }
-  .introduction .introText h2 {
+  .introduction .left .introTextContainer .introText h1 {
+    font-size: x-large;
+    font-weight: 400;
+  }
+  .introduction .left .introTextContainer .introText h1 strong {
+    font-size: 33px;
+    font-weight: 600;
+  }
+  .introduction .left .introTextContainer .introText h2 {
     font-size: 50px;
+    margin: 0.5rem 0;
   }
-  .introduction .introText p {
+  .introduction .left .introTextContainer .introText p {
+    margin: 2rem 0 4rem 0;
     font-size: 20px;
+    line-height: 2rem;
   }
-  .introduction .introButton {
-    justify-content: center;
+  .introduction .left .introButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .introduction .left .introButtonContainer .introButton a {
+    position: relative;
+  }
+  .introduction .left .introButtonContainer .introButton a svg {
+    display: none;
+  }
+  .introduction .left .introButtonContainer .introButton a .btn:hover {
+    background: #f65b5b;
+  }
+  .introduction .right {
+    display: none;
   }
   .navbar {
     justify-content: center;
@@ -253,23 +291,39 @@ html, body {
   .navbar .contact li a:hover:after, .navbar .contact li a:hover:before {
     display: none;
   }
-  .introduction .introText {
-    text-align: center;
+  .introduction .left .introTextContainer .introText h1 {
+    font-size: 18px;
+    font-weight: 400;
   }
-  .introduction .introText h1 {
-    font-size: 20px;
+  .introduction .left .introTextContainer .introText h1 strong {
+    font-size: 25px;
+    font-weight: 600;
   }
-  .introduction .introText h1 strong {
-    font-size: 27px;
-  }
-  .introduction .introText h2 {
+  .introduction .left .introTextContainer .introText h2 {
     font-size: 30px;
+    margin: 0.5rem 0;
   }
-  .introduction .introText p {
+  .introduction .left .introTextContainer .introText p {
+    margin: 2rem 0 4rem 0;
     font-size: 15px;
-    line-height: 1.5rem;
+    line-height: 2rem;
   }
-  .introduction .introButton {
-    justify-content: center;
+  .introduction .left .introTextContainer .introText .c {
+    color: rgb(194, 206, 215);
+  }
+  .introduction .left .introButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .introduction .left .introButtonContainer .introButton a {
+    position: relative;
+  }
+  .introduction .left .introButtonContainer .introButton a svg {
+    display: none;
+  }
+  .introduction .left .introButtonContainer .introButton a .btn:hover {
+    background: #f65b5b;
   }
 }/*# sourceMappingURL=styles.css.map */
