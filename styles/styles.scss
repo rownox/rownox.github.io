@@ -1,9 +1,9 @@
-$primaryBlack: rgb(20, 24, 31);;
+$primaryBlack: rgb(20, 24, 31);
 $navBar: #0f0f0f;
 $white: #ffffff;
 $white2: rgb(194, 206, 215);
 $secondaryWhite: #969899;
-$red1: #f65b5b;
+$red1: #f33434;
 
 * {
   margin: 0;
@@ -38,84 +38,101 @@ html, body {
   margin: 0.2rem 1rem;
 }
 
-/* NAVBAR */
-.navbar {
+/* ---------------- NAVBAR ---------------- */
+
+#nav {
+  background-color: none;
+  transition: ease-in-out;
+}
+
+.navContainer {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  height: 5rem;
+  flex-direction: column;
   align-items: center;
-  /* NAVIGATION BUTTONS*/
-  .navigation {
+  top: 0;
+  position: sticky;
+  .navbar {
+    width: 70%;
     display: flex;
-    li {
-      list-style-type: none;
-      a {
-        color: $white;
-        font-size: 17px;
-        font-weight: 500;
-        margin: 0 100px 0 0;
-        text-decoration: none;
-        display: block;
-        position: relative;
-        padding: 6px 0;
-        letter-spacing: 1px;
-      }
-      a:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 3px;
-        bottom: 0;
-        left: 0;
-        background-color: $white;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
-      }
-      a:hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+/* ---------------- NAVIGATION BUTTONS ---------------- */
+    .navigation {
+      display: flex;
+      li {
+        list-style-type: none;
+        a {
+          color: $white;
+          font-size: 17px;
+          font-weight: 500;
+          margin: 0 100px 0 0;
+          text-decoration: none;
+          display: block;
+          position: relative;
+          padding: 6px 0;
+          letter-spacing: 1px;
+        }
+        a:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 3px;
+          bottom: 0;
+          left: 0;
+          background-color: $white;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+        a:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
       }
     }
-  }
-  /* CONTACT BUTTON */
-  .contact {
-    li {
-      list-style-type: none;
-      a {
-        color: $white;
-        font-size: 17px;
-        font-weight: 500;
-        display: block;
-        width: 100%;
-        letter-spacing: 1px;
-      }
-      a:hover {
-        margin: 0;
-      }
-      a:after, a:before {
-        content: '';
-        border: 1.5px solid rgba($white, 0);
-        display: block;
-        transition: all 0.2s ease-in-out;
-        width: 0;
-        margin: 5px auto;
-      }
-      a:hover:after, a:hover:before {
-        background-color: $white;
-        transition: width 0.2s ease-in-out;
-        width: 95%;
+/* ---------------- CONTACT BUTTON ---------------- */
+    .contact {
+      li {
+        list-style-type: none;
+        a {
+          color: $white;
+          font-size: 17px;
+          font-weight: 500;
+          display: block;
+          width: 100%;
+          letter-spacing: 1px;
+        }
+        a:hover {
+          margin: 0;
+        }
+        a:after, a:before {
+          content: '';
+          border: 1.5px solid rgba($white, 0);
+          display: block;
+          transition: all 0.2s ease-in-out;
+          width: 0;
+          margin: 5px auto;
+        }
+        a:hover:after, a:hover:before {
+          background-color: $white;
+          transition: width 0.2s ease-in-out;
+          width: 95%;
+        }
       }
     }
   }
 }
+
+/* ---------------- INTRODUCTION ---------------- */
 
 .introduction {
   margin-top: 6rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 60rem;
+  height: 35rem;
   .right {
     height: 100%;
     .introLinksContainer {
@@ -135,7 +152,7 @@ html, body {
           }
         }
         .bottom {
-          height: 32%;
+          height: 55%;
           .introLastLine {
             @include line;
             height: 100%;
@@ -185,16 +202,16 @@ html, body {
             stroke: #fff;
             stroke-dasharray: 150 480;
             stroke-dashoffset: 150;
-            transition: 1s ease-in-out;
+            transition: 0.7s ease-in-out;
           }
           .btn {
-            width: 180px;
+            width: 150px;
             height: 60px;
             cursor: pointer;
             background: transparent;
             border: 1px solid $red1;
             outline: none;
-            transition: 1s ease-in-out;
+            transition: 0.7s ease-in-out;
           }
           .btn:hover {
             transition: 1s ease-in-out;
@@ -238,6 +255,18 @@ html, body {
     color: $white;
     font-size: xx-large;
   }
+}
+
+.footer {
+  margin-top: 10rem;
+  .footerBorder {
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $secondaryWhite;
+  }
+  width: 100%;
+  height: 20rem;
 }
 
 @media only screen and (max-width:1000px) {

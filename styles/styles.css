@@ -19,22 +19,37 @@ html, body {
   margin: 0 auto;
 }
 
-/* NAVBAR */
-.navbar {
+/* ---------------- NAVBAR ---------------- */
+#nav {
+  background-color: none;
+  transition: ease-in-out;
+}
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.navContainer .navbar {
+  width: 70%;
   display: flex;
   justify-content: space-between;
   height: 5rem;
   align-items: center;
-  /* NAVIGATION BUTTONS*/
-  /* CONTACT BUTTON */
+  /* ---------------- NAVIGATION BUTTONS ---------------- */
+  /* ---------------- CONTACT BUTTON ---------------- */
 }
-.navbar .navigation {
+.navContainer .navbar .navigation {
   display: flex;
 }
-.navbar .navigation li {
+.navContainer .navbar .navigation li {
   list-style-type: none;
 }
-.navbar .navigation li a {
+.navContainer .navbar .navigation li a {
   color: #ffffff;
   font-size: 17px;
   font-weight: 500;
@@ -45,7 +60,7 @@ html, body {
   padding: 6px 0;
   letter-spacing: 1px;
 }
-.navbar .navigation li a:after {
+.navContainer .navbar .navigation li a:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -57,14 +72,14 @@ html, body {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.navbar .navigation li a:hover:after {
+.navContainer .navbar .navigation li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.navbar .contact li {
+.navContainer .navbar .contact li {
   list-style-type: none;
 }
-.navbar .contact li a {
+.navContainer .navbar .contact li a {
   color: #ffffff;
   font-size: 17px;
   font-weight: 500;
@@ -72,10 +87,10 @@ html, body {
   width: 100%;
   letter-spacing: 1px;
 }
-.navbar .contact li a:hover {
+.navContainer .navbar .contact li a:hover {
   margin: 0;
 }
-.navbar .contact li a:after, .navbar .contact li a:before {
+.navContainer .navbar .contact li a:after, .navContainer .navbar .contact li a:before {
   content: "";
   border: 1.5px solid rgba(255, 255, 255, 0);
   display: block;
@@ -83,18 +98,19 @@ html, body {
   width: 0;
   margin: 5px auto;
 }
-.navbar .contact li a:hover:after, .navbar .contact li a:hover:before {
+.navContainer .navbar .contact li a:hover:after, .navContainer .navbar .contact li a:hover:before {
   background-color: #ffffff;
   transition: width 0.2s ease-in-out;
   width: 95%;
 }
 
+/* ---------------- INTRODUCTION ---------------- */
 .introduction {
   margin-top: 6rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 60rem;
+  height: 35rem;
 }
 .introduction .right {
   height: 100%;
@@ -118,7 +134,7 @@ html, body {
   width: 30px;
 }
 .introduction .right .introLinksContainer .introLinks .bottom {
-  height: 32%;
+  height: 55%;
 }
 .introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
   width: 0.12rem;
@@ -130,7 +146,7 @@ html, body {
   height: 100%;
 }
 .introduction .left .introTextContainer .introText h1 {
-  color: #f65b5b;
+  color: #f33434;
   font-size: x-large;
   font-weight: 400;
 }
@@ -165,20 +181,20 @@ html, body {
   stroke: #fff;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .introduction .left .introButtonContainer .introButton a .btn {
-  width: 180px;
+  width: 150px;
   height: 60px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #f65b5b;
+  border: 1px solid #f33434;
   outline: none;
-  transition: 1s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .introduction .left .introButtonContainer .introButton a .btn:hover {
   transition: 1s ease-in-out;
-  background: #f65b5b;
+  background: #f33434;
 }
 .introduction .left .introButtonContainer .introButton a .btn:hover svg {
   stroke-dashoffset: -480;
@@ -213,6 +229,18 @@ html, body {
 .widgets h1 {
   color: #ffffff;
   font-size: xx-large;
+}
+
+.footer {
+  margin-top: 10rem;
+  width: 100%;
+  height: 20rem;
+}
+.footer .footerBorder {
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #969899;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -256,7 +284,7 @@ html, body {
     display: none;
   }
   .introduction .left .introButtonContainer .introButton a .btn:hover {
-    background: #f65b5b;
+    background: #f33434;
   }
   .introduction .right {
     display: none;
@@ -324,6 +352,6 @@ html, body {
     display: none;
   }
   .introduction .left .introButtonContainer .introButton a .btn:hover {
-    background: #f65b5b;
+    background: #f33434;
   }
 }/*# sourceMappingURL=styles.css.map */
