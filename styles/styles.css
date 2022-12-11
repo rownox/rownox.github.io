@@ -128,10 +128,25 @@ html, body {
   height: 2rem;
 }
 .introduction .right .introLinksContainer .introLinks .top .linkButton {
+  display: flex;
+  background-color: rgb(20, 24, 31);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.6rem;
   border-radius: 30px;
-  border: 3px #969899 solid;
+  border: 2px solid #969899;
   height: 30px;
   width: 30px;
+  text-align: center;
+}
+.introduction .right .introLinksContainer .introLinks .top .linkButton i {
+  color: #969899;
+  font-size: 20px;
+  border-radius: 30px;
+  background-color: rgb(20, 24, 31);
+  text-align: center;
+  line-height: 0;
+  line-gap-override: 0;
 }
 .introduction .right .introLinksContainer .introLinks .bottom {
   height: 55%;
@@ -231,18 +246,6 @@ html, body {
   font-size: xx-large;
 }
 
-.footer {
-  margin-top: 10rem;
-  width: 100%;
-  height: 20rem;
-}
-.footer .footerBorder {
-  top: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #969899;
-}
-
 @media only screen and (max-width: 1000px) {
   /* For tablets: */
   .introduction .left {
@@ -291,6 +294,17 @@ html, body {
   }
   .navbar {
     justify-content: center;
+  }
+  .footer {
+    margin-top: 10rem;
+    width: 100%;
+    height: 20rem;
+  }
+  .footer .footerBorder {
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #969899;
   }
 }
 @media only screen and (max-width: 600px) {
