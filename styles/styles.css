@@ -4,11 +4,11 @@
   border: 0;
   outline: 0;
   font-size: 100%;
-  font-family: ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: ui-sans-serif, system-ui, BlinkMacSystemFont, Segoe UI,Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 html, body {
-  background-color: rgb(20, 24, 31);
+  background-color: #14181f;
   height: 100vh;
   scroll-behavior: smooth;
 }
@@ -22,33 +22,53 @@ html, body {
 /* ---------------- NAVBAR ---------------- */
 #nav {
   background-color: none;
+  -webkit-transition: ease-in-out;
   transition: ease-in-out;
 }
 
 .navContainer {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 0;
   position: -webkit-sticky;
   position: sticky;
 }
+
 .navContainer .navbar {
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 5rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* ---------------- NAVIGATION BUTTONS ---------------- */
   /* ---------------- CONTACT BUTTON ---------------- */
 }
+
 .navContainer .navbar .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .navContainer .navbar .navigation li {
   list-style-type: none;
 }
+
 .navContainer .navbar .navigation li a {
   color: #ffffff;
   font-size: 17px;
@@ -60,25 +80,36 @@ html, body {
   padding: 6px 0;
   letter-spacing: 1px;
 }
+
 .navContainer .navbar .navigation li a:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   height: 3px;
   bottom: 0;
   left: 0;
   background-color: #ffffff;
-  transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
+
 .navContainer .navbar .navigation li a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
+
 .navContainer .navbar .contact li {
   list-style-type: none;
 }
+
 .navContainer .navbar .contact li a {
   color: #ffffff;
   font-size: 17px;
@@ -87,19 +118,24 @@ html, body {
   width: 100%;
   letter-spacing: 1px;
 }
+
 .navContainer .navbar .contact li a:hover {
   margin: 0;
 }
+
 .navContainer .navbar .contact li a:after, .navContainer .navbar .contact li a:before {
-  content: "";
+  content: '';
   border: 1.5px solid rgba(255, 255, 255, 0);
   display: block;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   width: 0;
   margin: 5px auto;
 }
+
 .navContainer .navbar .contact li a:hover:after, .navContainer .navbar .contact li a:hover:before {
   background-color: #ffffff;
+  -webkit-transition: width 0.2s ease-in-out;
   transition: width 0.2s ease-in-out;
   width: 95%;
 }
@@ -107,87 +143,114 @@ html, body {
 /* ---------------- INTRODUCTION ---------------- */
 .introduction {
   margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 35rem;
 }
+
 .introduction .right {
   height: 100%;
 }
+
 .introduction .right .introLinksContainer {
   height: 100%;
 }
+
 .introduction .right .introLinksContainer .introLinks {
   height: 100%;
 }
+
 .introduction .right .introLinksContainer .introLinks .top .introLine {
   width: 0.12rem;
   background-color: #969899;
   margin: 0.2rem 1rem;
   height: 2rem;
 }
+
 .introduction .right .introLinksContainer .introLinks .top .linkButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  background-color: rgb(20, 24, 31);
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #14181f;
   margin-bottom: 1.6rem;
   border-radius: 30px;
   border: 2px solid #969899;
   height: 30px;
   width: 30px;
-  text-align: center;
 }
+
 .introduction .right .introLinksContainer .introLinks .top .linkButton i {
+  padding-top: 1.75px;
+  height: 100%;
   color: #969899;
   font-size: 20px;
   border-radius: 30px;
-  background-color: rgb(20, 24, 31);
-  text-align: center;
-  line-height: 0;
-  line-gap-override: 0;
+  background-color: #14181f;
 }
+
 .introduction .right .introLinksContainer .introLinks .bottom {
   height: 55%;
 }
+
 .introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
   width: 0.12rem;
   background-color: #969899;
   margin: 0.2rem 1rem;
   height: 100%;
 }
+
 .introduction .left {
   height: 100%;
 }
+
 .introduction .left .introTextContainer .introText h1 {
   color: #f33434;
   font-size: x-large;
   font-weight: 400;
 }
+
 .introduction .left .introTextContainer .introText h1 strong {
   font-size: 33px;
   font-weight: 600;
 }
+
 .introduction .left .introTextContainer .introText h2 {
   color: #ffffff;
   font-size: 60px;
   margin: 0.5rem 0;
 }
+
 .introduction .left .introTextContainer .introText p {
   margin: 2rem 0 4rem 0;
   color: #969899;
   font-size: 23px;
   line-height: 2.5rem;
 }
+
 .introduction .left .introButtonContainer {
   height: 10rem;
 }
+
 .introduction .left .introButtonContainer .introButton a {
   width: 180px;
   height: 60px;
   position: absolute;
 }
+
 .introduction .left .introButtonContainer .introButton a svg {
   position: absolute;
   left: 0;
@@ -196,8 +259,10 @@ html, body {
   stroke: #fff;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
+  -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
+
 .introduction .left .introButtonContainer .introButton a .btn {
   width: 150px;
   height: 60px;
@@ -205,15 +270,20 @@ html, body {
   background: transparent;
   border: 1px solid #f33434;
   outline: none;
+  -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
+
 .introduction .left .introButtonContainer .introButton a .btn:hover {
+  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   background: #f33434;
 }
+
 .introduction .left .introButtonContainer .introButton a .btn:hover svg {
   stroke-dashoffset: -480;
 }
+
 .introduction .left .introButtonContainer .introButton a .btn span {
   color: white;
   font-size: 18px;
@@ -225,22 +295,34 @@ html, body {
   margin-top: 5rem;
   width: 100%;
   height: 35rem;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .widgets .graphicsWidget {
   width: 30rem;
 }
+
 .widgets .graphicsWidget a {
   color: #ffffff;
 }
+
 .widgets .codingWidget {
   width: 30rem;
 }
+
 .widgets .codingWidget a {
   color: #ffffff;
 }
+
 .widgets h1 {
   color: #ffffff;
   font-size: xx-large;
@@ -275,9 +357,16 @@ html, body {
     line-height: 2rem;
   }
   .introduction .left .introButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
   .introduction .left .introButtonContainer .introButton a {
@@ -293,7 +382,9 @@ html, body {
     display: none;
   }
   .navbar {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer {
     margin-top: 10rem;
@@ -307,6 +398,7 @@ html, body {
     background-color: #969899;
   }
 }
+
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .mainContent {
@@ -315,7 +407,9 @@ html, body {
     margin: 0 auto;
   }
   .navbar {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navbar .navigation li a {
     font-size: 17px;
@@ -351,12 +445,19 @@ html, body {
     line-height: 2rem;
   }
   .introduction .left .introTextContainer .introText .c {
-    color: rgb(194, 206, 215);
+    color: #c2ced7;
   }
   .introduction .left .introButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
   .introduction .left .introButtonContainer .introButton a {
@@ -368,4 +469,5 @@ html, body {
   .introduction .left .introButtonContainer .introButton a .btn:hover {
     background: #f33434;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */

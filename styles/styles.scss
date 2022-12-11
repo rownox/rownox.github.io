@@ -147,23 +147,21 @@ html, body {
           .linkButton {
             
             display: flex;
-            background-color: $primaryBlack;
             justify-content: center;
             align-items: center;
+            background-color: $primaryBlack;
             margin-bottom: 1.6rem;
             border-radius: 30px;
             border: 2px solid $secondaryWhite;
             height: 30px;
             width: 30px;
-            text-align: center;
             i {
+              padding-top: 1.75px;
+              height: 100%;
               color: $secondaryWhite;
               font-size: 20px;
               border-radius: 30px;
               background-color: $primaryBlack;
-              text-align: center;
-              line-height: 0;
-              line-gap-override: 0;
             }
           }
         }
