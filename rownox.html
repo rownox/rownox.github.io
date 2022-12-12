@@ -8,19 +8,23 @@
     <link href="styles/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f93b343dac.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <nav>
     <div class="navContainer" id="nav">
       <div class="navbar">
-        <div class="navigation">
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="work.html">Work</a></li>
+        <div class="logo">
+          <img src="images/Rlogo.png">
+          <h1>rownox</h1>
         </div>
-        <div class="contact">
-          <li><a>Contact</a></li>
+        <div class="navigation">
+          <li><a href="#Home">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </div>
       </div>
     </div>
+  </nav>
+  <body id="Home">
     <div class="mainContent">
       <div class="introduction">
         <div class="left">
@@ -29,21 +33,19 @@
               <h1>Hello, I'm <strong>rownox</strong></h1>
               <h2>Software Developer</h2>
               <h2 class="c">Digital Designer</h2>
-              <p>In programming, I specialize in engineering and designing full-stack technology.
-                <br>I am also an experienced graphic designer with multiple successful projects.
-                <br>Currently, I'm furthering my knowledge in AI, but machine learning specifically.
+              <p>In programming, I specialize in engineering and designing full-stack technology. I am also an experienced graphic designer with multiple successful projects. Currently, I'm furthering my knowledge in AI, but machine learning specifically.
               </p>
             </div>
           </div>
           <div class="introButtonContainer">
             <div class="introButton">
-              <a>
+              <a href="#Projects">
                 <button class="btn">
                   <svg width="150px" height="60px" viewBox="0 0 150 60" class="border">
                     <polyline points="149,1 149,59 1,59 1,1 149,1" class="bg-line" />
                     <polyline points="149,1 149,59 1,59 1,1 149,1" class="hl-line" />
                   </svg>
-                  <span>EXPLORE</span>
+                  <span>Explore</span>
                 </button>
               </a>
             </div>
@@ -54,15 +56,15 @@
             <div class="introLinks">
               <div class="top">
                 <div class="linkButton">
-                  <a>
+                  <a href="https://github.com/rownox" target="_blank" class="github">
                     <i class="fa-brands fa-github"></i>
                   </a>
                 </div>
                 <div class="linkButton">
-                  <a></a>
+                  <i class="fa-brands fa-discord"></i>
                 </div>
                 <div class="linkButton">
-                  <a></a>
+                  <i class="fa-brands fa-linkedin-in"></i>
                 </div>
               </div>
               <div class="bottom">
@@ -72,9 +74,17 @@
           </div>
         </div>
       </div>
+      <div id="Skills" class="skills">
+        <h1 >Skills</h1>
+      </div>
+      <div id="Projects" class="projects">
+        <h1>Projects</h1>
+      </div>
+      <div id="Contact" class="contact">
+        <h1>Contact</h1>
+      </div>
       <div class="footer">
         <div class="footerBorder">
-          
         </div>
       </div>
     </div>
@@ -89,7 +99,7 @@
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       if (!scrolled) {
         scrolled = true;
-        document.getElementById("nav").style.backgroundColor = "#0f0f0f";
+        document.getElementById("nav").style.backgroundColor = "rgb(14, 17, 22)";
       }
     } else {
       document.getElementById("nav").style.backgroundColor = "rgb(20, 24, 31)";
