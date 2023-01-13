@@ -8,7 +8,7 @@
 }
 
 html, body {
-  background-color: rgb(20, 24, 31);
+  background-color: #111316;
   height: 100vh;
   scroll-behavior: smooth;
 }
@@ -50,6 +50,7 @@ html, body {
   top: 0;
   position: fixed;
   z-index: 2;
+  height: 11%;
 }
 .navContainer .navbar {
   padding-top: 0.7rem;
@@ -57,7 +58,7 @@ html, body {
   width: 70.5%;
   display: flex;
   justify-content: space-between;
-  height: 5rem;
+  height: 100%;
   align-items: center;
   /* ---------------- NAVIGATION BUTTONS ---------------- */
 }
@@ -143,110 +144,113 @@ html, body {
 }
 
 /* ---------------- INTRODUCTION ---------------- */
-.introduction {
-  margin-top: 15rem;
+.about {
+  margin-top: 18%;
+  height: 60%;
+}
+.about .introduction {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 35rem;
 }
-.introduction .right {
+.about .introduction .right {
   height: 100%;
 }
-.introduction .right .introLinksContainer {
+.about .introduction .right .introLinksContainer {
   height: 100%;
 }
-.introduction .right .introLinksContainer .introLinks {
+.about .introduction .right .introLinksContainer .introLinks {
   height: 100%;
 }
-.introduction .right .introLinksContainer .introLinks .top .introLine {
+.about .introduction .right .introLinksContainer .introLinks .top .introLine {
   width: 0.15rem;
   background-color: #777777;
   margin: 0.2rem 1rem;
   height: 2rem;
 }
-.introduction .right .introLinksContainer .introLinks .top .linkButton {
+.about .introduction .right .introLinksContainer .introLinks .top .linkButton {
   margin-top: 1rem;
   transition: all 0.1s ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(20, 24, 31);
+  background-color: #111316;
   margin-bottom: 1.4rem;
   border-radius: 30px;
   border: 3px solid #777777;
   height: 30px;
   width: 30px;
 }
-.introduction .right .introLinksContainer .introLinks .top .linkButton i {
+.about .introduction .right .introLinksContainer .introLinks .top .linkButton i {
   transition: all 0.1s ease-in;
-  background-color: rgb(20, 24, 31);
+  background-color: #111316;
   color: #777777;
   border-radius: 30px;
 }
-.introduction .right .introLinksContainer .introLinks .top .linkButton .fa-github {
+.about .introduction .right .introLinksContainer .introLinks .top .linkButton .fa-github {
   margin-top: 1.8px;
   font-size: 20px;
 }
-.introduction .right .introLinksContainer .introLinks .top .linkButton .fa-linkedin-in {
+.about .introduction .right .introLinksContainer .introLinks .top .linkButton .fa-linkedin-in {
   margin-top: 1.7px;
 }
-.introduction .right .introLinksContainer .introLinks .top .linkButton:hover {
+.about .introduction .right .introLinksContainer .introLinks .top .linkButton:hover {
   transform: translate(0, -5px);
   border-color: #ffffff;
 }
-.introduction .right .introLinksContainer .introLinks .top .linkButton:hover i {
+.about .introduction .right .introLinksContainer .introLinks .top .linkButton:hover i {
   color: #ffffff;
 }
-.introduction .right .introLinksContainer .introLinks .bottom {
+.about .introduction .right .introLinksContainer .introLinks .bottom {
   height: 55%;
 }
-.introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
+.about .introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
   width: 0.15rem;
   background-color: #777777;
   margin: 0.2rem 1rem;
   height: 100%;
 }
-.introduction .left {
+.about .introduction .left {
   height: 100%;
 }
-.introduction .left .introTextContainer .introText {
+.about .introduction .left .introTextContainer .introText {
   width: 73%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-.introduction .left .introTextContainer .introText h1 {
+.about .introduction .left .introTextContainer .introText h1 {
   color: #f33434;
   font-size: x-large;
   font-weight: 400;
 }
-.introduction .left .introTextContainer .introText h1 strong {
+.about .introduction .left .introTextContainer .introText h1 strong {
   font-size: 33px;
   font-weight: 600;
 }
-.introduction .left .introTextContainer .introText h2 {
+.about .introduction .left .introTextContainer .introText h2 {
   color: #ffffff;
   font-size: 50px;
   margin: 0.5rem 0;
 }
-.introduction .left .introTextContainer .introText p {
+.about .introduction .left .introTextContainer .introText p {
   margin: 2rem 0 4rem 0;
-  color: #aeaeae;
+  color: #cfcfcf;
   font-size: 23px;
   line-height: 2.5rem;
 }
-.introduction .left .introButtonContainer {
+.about .introduction .left .introButtonContainer {
   height: 10rem;
 }
-.introduction .left .introButtonContainer .introButton a {
+.about .introduction .left .introButtonContainer .introButton a {
   width: 180px;
   height: 60px;
   position: absolute;
   z-index: 1;
 }
-.introduction .left .introButtonContainer .introButton a svg {
+.about .introduction .left .introButtonContainer .introButton a svg {
   position: absolute;
   left: 0;
   top: 0;
@@ -256,7 +260,7 @@ html, body {
   stroke-dashoffset: 150;
   transition: 0.7s ease-in-out;
 }
-.introduction .left .introButtonContainer .introButton a .btn {
+.about .introduction .left .introButtonContainer .introButton a .btn {
   width: 150px;
   height: 60px;
   cursor: pointer;
@@ -265,14 +269,14 @@ html, body {
   outline: none;
   transition: 0.7s ease-in-out;
 }
-.introduction .left .introButtonContainer .introButton a .btn:hover {
+.about .introduction .left .introButtonContainer .introButton a .btn:hover {
   transition: 1s ease-in-out;
   background: #f33434;
 }
-.introduction .left .introButtonContainer .introButton a .btn:hover svg {
+.about .introduction .left .introButtonContainer .introButton a .btn:hover svg {
   stroke-dashoffset: -480;
 }
-.introduction .left .introButtonContainer .introButton a .btn span {
+.about .introduction .left .introButtonContainer .introButton a .btn span {
   color: white;
   font-size: 18px;
   font-weight: 100;
@@ -280,8 +284,8 @@ html, body {
 }
 
 .skills {
-  margin-top: 8rem;
-  height: 50rem;
+  margin-top: 10vh;
+  height: 100%;
   padding-top: 10rem;
 }
 .skills h1 {
@@ -290,7 +294,9 @@ html, body {
 }
 
 .projects {
-  margin-top: 8rem;
+  margin-top: 10vh;
+  height: 100%;
+  padding-top: 10rem;
 }
 .projects h1 {
   color: #ffffff;
@@ -298,7 +304,9 @@ html, body {
 }
 
 .contact {
-  margin-top: 8rem;
+  margin-top: 10vh;
+  height: 100%;
+  padding-top: 10rem;
 }
 .contact h1 {
   color: #ffffff;
@@ -419,7 +427,7 @@ html, body {
     top: 0;
     width: 100%;
     height: 2px;
-    background-color: #aeaeae;
+    background-color: #cfcfcf;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -434,7 +442,7 @@ html, body {
     padding-bottom: 15px;
     width: 100%;
     height: 9rem;
-    background-color: rgb(14, 17, 22);
+    background-color: #0a0c0e;
   }
   .newNavBar .navigation {
     flex-direction: column;
