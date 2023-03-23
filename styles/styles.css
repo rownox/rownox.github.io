@@ -367,54 +367,54 @@ html, body {
     text-decoration: none;
     letter-spacing: 1px;
   }
-  .introduction {
+  .about .introduction {
     margin-top: 5rem;
     height: 50%;
   }
-  .introduction .left {
+  .about .introduction .left {
     width: 100%;
   }
-  .introduction .left .introTextContainer {
+  .about .introduction .left .introTextContainer {
     width: 100%;
   }
-  .introduction .left .introTextContainer .introText {
+  .about .introduction .left .introTextContainer .introText {
     width: 100%;
     text-align: center;
   }
-  .introduction .left .introTextContainer .introText h1 {
+  .about .introduction .left .introTextContainer .introText h1 {
     font-size: x-large;
     font-weight: 400;
   }
-  .introduction .left .introTextContainer .introText h1 strong {
+  .about .introduction .left .introTextContainer .introText h1 strong {
     font-size: 33px;
     font-weight: 600;
   }
-  .introduction .left .introTextContainer .introText h2 {
+  .about .introduction .left .introTextContainer .introText h2 {
     font-size: 40px;
     margin: 0.5rem 0;
   }
-  .introduction .left .introTextContainer .introText p {
+  .about .introduction .left .introTextContainer .introText p {
     margin: 2rem 0 4rem 0;
     font-size: 20px;
     line-height: 2rem;
   }
-  .introduction .left .introButtonContainer {
+  .about .introduction .left .introButtonContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .introduction .left .introButtonContainer .introButton a {
+  .about .introduction .left .introButtonContainer .introButton a {
     align-self: center;
     position: relative;
   }
-  .introduction .left .introButtonContainer .introButton a svg {
+  .about .introduction .left .introButtonContainer .introButton a svg {
     display: none;
   }
-  .introduction .left .introButtonContainer .introButton a .btn:hover {
+  .about .introduction .left .introButtonContainer .introButton a .btn:hover {
     background: #f33434;
   }
-  .introduction .right {
+  .about .introduction .right {
     display: none;
     width: 0;
   }
@@ -453,35 +453,35 @@ html, body {
     font-weight: 400;
     letter-spacing: 2px;
   }
-  .introduction {
+  .about .introduction {
     margin-top: 3rem;
     height: 30%;
   }
-  .introduction .left .introTextContainer .introText h1 {
+  .about .introduction .left .introTextContainer .introText h1 {
     font-size: 15px;
     font-weight: 400;
   }
-  .introduction .left .introTextContainer .introText h1 strong {
+  .about .introduction .left .introTextContainer .introText h1 strong {
     font-size: 20px;
     font-weight: 600;
   }
-  .introduction .left .introTextContainer .introText h2 {
+  .about .introduction .left .introTextContainer .introText h2 {
     font-size: 20px;
   }
-  .introduction .left .introTextContainer .introText p {
+  .about .introduction .left .introTextContainer .introText p {
     margin: 1rem 0 4rem 0;
     font-size: 15px;
     line-height: 1.5rem;
   }
-  .introduction .left .introButtonContainer {
+  .about .introduction .left .introButtonContainer {
     display: none;
   }
-  .introduction .footer {
+  .about .introduction .footer {
     margin-top: 10rem;
     width: 100%;
     height: 20rem;
   }
-  .introduction .footer .footerBorder {
+  .about .introduction .footer .footerBorder {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
