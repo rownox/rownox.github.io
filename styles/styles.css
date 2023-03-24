@@ -27,6 +27,10 @@ html, body {
     transform: rotate(180deg);
   }
 }
+.invert {
+  filter: brightness(0) invert(100%);
+}
+
 /* ---------------- NAVBAR ---------------- */
 #nav {
   background-color: none;
@@ -269,34 +273,45 @@ html, body {
   text-align: center;
 }
 
-.skills {
+.skills-container {
   margin-top: 10vh;
   height: 100%;
   padding-top: 10rem;
 }
-.skills h1 {
+.skills-container h1 {
   color: #ffffff;
   font-size: 35px;
+  margin-bottom: 3rem;
+}
+.skills-container h2 {
+  color: #ffffff;
+  font-size: 25px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.skills-container .skills-body i, .skills-container .skills-body img {
+  height: 4rem;
+  color: white;
+  font-size: 4rem;
+  aspect-ratio: auto;
+  margin-left: 1rem;
+}
+.skills-container .code-icons {
+  margin-bottom: 2rem;
+}
+.skills-container .tool-icons {
+  margin-bottom: 2rem;
 }
 
-.projects {
+.projects-container {
   margin-top: 10vh;
   height: 100%;
   padding-top: 10rem;
 }
-.projects h1 {
+.projects-container h1 {
   color: #ffffff;
   font-size: 35px;
-}
-
-.contact {
-  margin-top: 10vh;
-  height: 100%;
-  padding-top: 10rem;
-}
-.contact h1 {
-  color: #ffffff;
-  font-size: 35px;
+  margin-bottom: 3rem;
 }
 
 .widgets {

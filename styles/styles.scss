@@ -30,6 +30,14 @@ html, body {
 @mixin title {
   color: $white;
   font-size: 35px;
+  margin-bottom: 3rem;
+}
+
+@mixin subtitle {
+  color: $white;
+  font-size: 25px;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 @mixin section {
@@ -57,6 +65,10 @@ html, body {
   to {
       transform:rotate(180deg);
   }
+}
+
+.invert {
+  filter: brightness(0) invert(100%);
 }
 
 /* ---------------- NAVBAR ---------------- */
@@ -302,20 +314,32 @@ html, body {
   }
 }
 
-
-.skills {
+.skills-container {
   @include section;
+  
   h1 {
     @include title;
   }
-}
-.projects {
-  @include section;
-  h1 {
-    @include title;
+  h2 {
+    @include subtitle;
+  }
+  .skills-body {
+    i, img {
+      height: 4rem;
+      color: white;
+      font-size: 4rem;
+      aspect-ratio: auto;
+      margin-left: 1rem
+    }
+  }
+  .code-icons {
+    margin-bottom: 2rem;
+  }
+  .tool-icons {
+    margin-bottom: 2rem;
   }
 }
-.contact {
+.projects-container {
   @include section;
   h1 {
     @include title;
