@@ -456,22 +456,7 @@ html, body {
   }
   
   .newNavBar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    height: 9rem;
-    background-color: $navBar;
-    .navigation {
-      flex-direction: column;
-      align-items: center;
-      li {
-        a {
-          font-size: 15px;
-          font-weight: 400;
-          letter-spacing: 2px;
-        }
-      }
-    }
+    display: none;
   }
 
   .about {

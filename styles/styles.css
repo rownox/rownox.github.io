@@ -19,15 +19,6 @@ html, body {
   margin: 0 auto;
 }
 
-@-webkit-keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -87,7 +78,6 @@ html, body {
   transition: color 0.2s ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .navContainer .navbar .logo:hover h1 {
@@ -95,10 +85,8 @@ html, body {
 }
 .navContainer .navbar .logo:hover img {
   border-color: #ffffff;
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  animation-name: spin;
+  animation-duration: 0.5s;
 }
 .navContainer .navbar .navigation {
   width: 100%;
@@ -118,7 +106,6 @@ html, body {
   letter-spacing: 0.5px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   padding-bottom: 5px;
 }
@@ -218,7 +205,6 @@ html, body {
   width: 73%;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .about .introduction .left .introTextContainer .introText h1 {
@@ -438,20 +424,7 @@ html, body {
     margin: 0 auto;
   }
   .newNavBar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    height: 9rem;
-    background-color: #0a0c0e;
-  }
-  .newNavBar .navigation {
-    flex-direction: column;
-    align-items: center;
-  }
-  .newNavBar .navigation li a {
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    display: none;
   }
   .about .introduction {
     margin-top: 3rem;
