@@ -13,12 +13,6 @@ html, body {
   scroll-behavior: smooth;
 }
 
-.mainContent {
-  width: 70%;
-  height: 100%;
-  margin: 0 auto;
-}
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -50,7 +44,8 @@ html, body {
 .navContainer .navbar {
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
-  width: 70.5%;
+  width: 65%;
+  max-width: 140svh;
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -130,10 +125,17 @@ html, body {
   display: none;
 }
 
-/* ---------------- INTRODUCTION ---------------- */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  max-width: 140svh;
+  margin: 0 auto;
+}
+
 .about {
   margin-top: 25vh;
-  height: 60vh;
+  width: 100%;
 }
 .about .introduction {
   display: flex;
@@ -275,7 +277,6 @@ html, body {
 
 .skills-container {
   width: 100%;
-  height: 100%;
   padding-top: 10rem;
   margin: 10vh 0;
   display: flex;
@@ -290,62 +291,64 @@ html, body {
   text-align: center;
 }
 .skills-container .stack-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
+  width: 100%;
   background-color: #1d2629;
-  padding: 15px;
   border-radius: 10px;
   border: 2px solid #273134;
   margin-bottom: 8%;
 }
-.skills-container .stack-container h2 {
+.skills-container .stack-container .stack-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+}
+.skills-container .stack-container .stack-padding h2 {
   color: #ffffff;
   font-size: 25px;
   margin-bottom: 1rem;
   font-weight: 500;
 }
-.skills-container .stack-container .stack {
+.skills-container .stack-container .stack-padding .stack {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.skills-container .stack-container .stack .button {
-  margin-top: 10px;
+.skills-container .stack-container .stack-padding .stack .button {
+  margin-top: 1.5vh;
   border: 1px solid #41474c;
   height: 27px;
   display: flex;
   justify-content: space-between;
   background-color: #343c3e;
-  border-radius: 8px 20px 20px 8px;
-  margin-right: 10px;
+  border-radius: 7px;
+  margin-right: 1.5vh;
 }
-.skills-container .stack-container .stack .button span {
+.skills-container .stack-container .stack-padding .stack .button span {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 27px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 6px;
   margin-right: 7px;
 }
-.skills-container .stack-container .stack .button span .resize {
+.skills-container .stack-container .stack-padding .stack .button span .resize {
   height: 10px;
 }
-.skills-container .stack-container .stack .button span i, .skills-container .stack-container .stack .button span img {
+.skills-container .stack-container .stack-padding .stack .button span i, .skills-container .stack-container .stack-padding .stack .button span img {
   height: 19px;
   aspect-ratio: auto;
   font-size: 19px;
   color: #ffffff;
 }
-.skills-container .stack-container .stack .button span p {
+.skills-container .stack-container .stack-padding .stack .button span p {
   padding-bottom: 2px;
   font-size: 15px;
   color: #cfcfcf;
 }
-.skills-container .stack-container button {
+.skills-container .stack-container .stack-padding button {
   margin-top: 20px;
   border-radius: 3px;
   padding: 6px 11px 7px 11px;
@@ -354,7 +357,7 @@ html, body {
   color: #ffffff;
   transition: background-color, border-color 0.3s;
 }
-.skills-container .stack-container button:hover {
+.skills-container .stack-container .stack-padding button:hover {
   background-color: #df0808;
   border-color: #ffffff;
 }
@@ -374,52 +377,54 @@ html, body {
   text-align: center;
 }
 .projects-container .project-container {
-  display: flex;
-  align-items: center;
   min-height: 150px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 20px;
-  padding: 15px;
   text-decoration: none;
   border-radius: 10px;
   border: 2px solid #273134;
   background-color: #1d2629;
 }
-.projects-container .project-container img {
+.projects-container .project-container .project-padding {
+  display: flex;
+  align-items: center;
+  padding: 1.5vh;
+}
+.projects-container .project-container .project-padding img {
   width: 150px;
   height: 150px;
   border-radius: 10px;
   margin-right: 20px;
   border: 2px solid #273134;
 }
-.projects-container .project-container .info {
+.projects-container .project-container .project-padding .info {
   width: 100%;
   min-height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.projects-container .project-container .info .text {
+.projects-container .project-container .project-padding .info .text {
   margin-top: 3px;
   margin-right: 15%;
 }
-.projects-container .project-container .info .text h2 {
+.projects-container .project-container .project-padding .info .text h2 {
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 1vh;
 }
-.projects-container .project-container .info .text p {
+.projects-container .project-container .project-padding .info .text p {
   color: #cfcfcf;
   font-size: 1.1rem;
 }
-.projects-container .project-container .info .tools {
+.projects-container .project-container .project-padding .info .tools {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 3px;
 }
-.projects-container .project-container .info .tools i {
+.projects-container .project-container .project-padding .info .tools i {
   margin-top: 10px;
   line-height: 15px;
   margin-right: 10px;
