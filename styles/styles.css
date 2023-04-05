@@ -324,6 +324,11 @@ html, body {
   background-color: #343c3e;
   border-radius: 7px;
   margin-right: 1.5vh;
+  transition: all 0.2s ease-in-out;
+}
+.skills-container .stack-container .stack-padding .stack .button:hover {
+  cursor: pointer;
+  transform: scale(105%) translateY(-5px);
 }
 .skills-container .stack-container .stack-padding .stack .button span {
   height: 100%;

@@ -343,6 +343,11 @@ html, body {
           background-color: $tag;
           border-radius: 7px;
           margin-right: 1.5vh;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            transform: scale(105%) translateY(-5px);
+          }
           span {
             height: 100%;
             display: flex;
