@@ -276,8 +276,8 @@ html, body {
 .skills-container {
   width: 100%;
   height: 100%;
-  margin-top: 10vh;
   padding-top: 10rem;
+  margin: 10vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -293,12 +293,12 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   background-color: #1d2629;
-  padding: 15px 20px;
+  padding: 15px;
   border-radius: 10px;
   border: 2px solid #273134;
-  margin-bottom: 5vh;
+  margin-bottom: 8%;
 }
 .skills-container .stack-container h2 {
   color: #ffffff;
@@ -361,9 +361,10 @@ html, body {
 
 .projects-container {
   width: 100%;
-  height: 100%;
-  margin: 24vh 0;
-  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
 }
 .projects-container h1 {
   color: #ffffff;
@@ -376,9 +377,9 @@ html, body {
   display: flex;
   align-items: center;
   min-height: 150px;
-  width: 95%;
+  width: 90%;
   margin-bottom: 20px;
-  padding: 12px;
+  padding: 15px;
   text-decoration: none;
   border-radius: 10px;
   border: 2px solid #273134;
@@ -541,9 +542,6 @@ html, body {
   .newNavBar {
     display: none;
   }
-  .about .introduction {
-    height: 30%;
-  }
   .about .introduction .left .introTextContainer .introText h1 {
     font-size: 25px;
     font-weight: 400;
@@ -554,8 +552,8 @@ html, body {
   }
   .about .introduction .left .introTextContainer .introText h2 {
     margin-top: 1rem;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 20px;
   }
   .about .introduction .left .introTextContainer .introText p {
     font-size: 23px;
@@ -575,9 +573,22 @@ html, body {
     margin-top: 0;
     padding-top: 0;
   }
+  .skills-container h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    text-align: center;
+  }
   .projects-container {
-    padding-top: 0;
     padding-bottom: 10vh;
+  }
+  .projects-container h1 {
+    color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    text-align: center;
   }
   .projects-container .project-container img {
     display: none;
