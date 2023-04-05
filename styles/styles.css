@@ -59,25 +59,22 @@ html, body {
 }
 .navContainer .navbar .logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 55px;
+  height: 6vh;
 }
 .navContainer .navbar .logo img {
-  width: 50px;
-  height: 50px;
-  margin-right: 30px;
-  border-radius: 30px;
-  border: 3px solid #777777;
+  width: 5.5vh;
+  height: 5.5vh;
+  margin-right: 3vh;
+  border-radius: 5.5vh;
+  border: 0.35vh solid #777777;
   transition: border-color 0.2s ease-in-out;
 }
 .navContainer .navbar .logo h1 {
-  padding-top: 8px;
-  display: flex;
-  align-items: flex-start;
+  line-height: 5.2vh;
   height: 100%;
   color: #939393;
-  font-size: 30px;
+  font-size: 3vh;
   font-weight: 500;
   transition: color 0.2s ease-in-out;
   -webkit-user-select: none;
@@ -102,23 +99,22 @@ html, body {
 }
 .navContainer .navbar .navigation li a {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 2vh;
   font-weight: 500;
   margin-left: 5vw;
   text-decoration: none;
   position: relative;
-  letter-spacing: 0.5px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  padding-bottom: 5px;
+  padding-bottom: 0.5vh;
 }
 .navContainer .navbar .navigation li a:after {
   content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: 0.3vh;
   bottom: 0;
   left: 0;
   background-color: #ffffff;
@@ -136,71 +132,14 @@ html, body {
 
 /* ---------------- INTRODUCTION ---------------- */
 .about {
-  margin-top: 18%;
-  height: 60%;
+  margin-top: 25vh;
+  height: 60vh;
 }
 .about .introduction {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 35rem;
-}
-.about .introduction .right {
-  height: 100%;
-}
-.about .introduction .right .introLinksContainer {
-  height: 100%;
-}
-.about .introduction .right .introLinksContainer .introLinks {
-  height: 100%;
-}
-.about .introduction .right .introLinksContainer .introLinks .top .introLine {
-  width: 0.15rem;
-  background-color: #777777;
-  margin: 0.2rem 1rem;
-  height: 2rem;
-}
-.about .introduction .right .introLinksContainer .introLinks .top .linkButton {
-  margin-top: 1rem;
-  transition: all 0.1s ease-in;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #111316;
-  margin-bottom: 1.4rem;
-  border-radius: 30px;
-  border: 3px solid #777777;
-  height: 30px;
-  width: 30px;
-}
-.about .introduction .right .introLinksContainer .introLinks .top .linkButton i {
-  transition: all 0.1s ease-in;
-  background-color: #111316;
-  color: #777777;
-  border-radius: 30px;
-}
-.about .introduction .right .introLinksContainer .introLinks .top .linkButton .fa-github {
-  margin-top: 1.8px;
-  font-size: 20px;
-}
-.about .introduction .right .introLinksContainer .introLinks .top .linkButton .fa-linkedin-in {
-  margin-top: 1.7px;
-}
-.about .introduction .right .introLinksContainer .introLinks .top .linkButton:hover {
-  transform: translate(0, -5px);
-  border-color: #ffffff;
-}
-.about .introduction .right .introLinksContainer .introLinks .top .linkButton:hover i {
-  color: #ffffff;
-}
-.about .introduction .right .introLinksContainer .introLinks .bottom {
-  height: 55%;
-}
-.about .introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
-  width: 0.15rem;
-  background-color: #777777;
-  margin: 0.2rem 1rem;
-  height: 100%;
 }
 .about .introduction .left {
   height: 100%;
@@ -272,71 +211,229 @@ html, body {
   font-weight: 100;
   text-align: center;
 }
+.about .introduction .right {
+  height: 100%;
+}
+.about .introduction .right .introLinksContainer {
+  height: 100%;
+}
+.about .introduction .right .introLinksContainer .introLinks {
+  height: 100%;
+}
+.about .introduction .right .introLinksContainer .introLinks .top .introLine {
+  width: 0.15rem;
+  background-color: #777777;
+  margin: 0.2rem 1rem;
+  height: 2rem;
+}
+.about .introduction .right .introLinksContainer .introLinks .top a {
+  text-decoration: none;
+}
+.about .introduction .right .introLinksContainer .introLinks .top a .linkButton {
+  margin-top: 1rem;
+  transition: all 0.1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111316;
+  margin-bottom: 1.4rem;
+  border-radius: 30px;
+  border: 3px solid #777777;
+  height: 30px;
+  width: 30px;
+}
+.about .introduction .right .introLinksContainer .introLinks .top a .linkButton i {
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  background-color: #111316;
+  color: #777777;
+  border-radius: 30px;
+}
+.about .introduction .right .introLinksContainer .introLinks .top a .linkButton .fa-github {
+  margin-top: 1.8px;
+  font-size: 20px;
+}
+.about .introduction .right .introLinksContainer .introLinks .top a .linkButton .fa-linkedin-in {
+  margin-top: 1.7px;
+}
+.about .introduction .right .introLinksContainer .introLinks .top a .linkButton:hover {
+  transform: translate(0, -5px);
+  border-color: #ffffff;
+}
+.about .introduction .right .introLinksContainer .introLinks .top a .linkButton:hover i {
+  color: #ffffff;
+}
+.about .introduction .right .introLinksContainer .introLinks .bottom {
+  height: 55%;
+}
+.about .introduction .right .introLinksContainer .introLinks .bottom .introLastLine {
+  width: 0.15rem;
+  background-color: #777777;
+  margin: 0.2rem 1rem;
+  height: 100%;
+}
 
 .skills-container {
-  margin-top: 10vh;
+  width: 100%;
   height: 100%;
+  margin-top: 10vh;
   padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .skills-container h1 {
   color: #ffffff;
   font-size: 35px;
   margin-bottom: 3rem;
+  font-weight: 500;
+  text-align: center;
 }
-.skills-container h2 {
+.skills-container .stack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background-color: #1d2629;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 2px solid #273134;
+  margin-bottom: 5vh;
+}
+.skills-container .stack-container h2 {
   color: #ffffff;
   font-size: 25px;
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  font-weight: 500;
 }
-.skills-container .skills-body i, .skills-container .skills-body img {
-  height: 4rem;
-  color: white;
-  font-size: 4rem;
+.skills-container .stack-container .stack {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-container .stack-container .stack .button {
+  margin-top: 10px;
+  border: 1px solid #41474c;
+  height: 27px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #343c3e;
+  border-radius: 8px 20px 20px 8px;
+  margin-right: 10px;
+}
+.skills-container .stack-container .stack .button span {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 27px;
+  border-radius: 5px 0 0 5px;
+  margin-right: 7px;
+}
+.skills-container .stack-container .stack .button span .resize {
+  height: 10px;
+}
+.skills-container .stack-container .stack .button span i, .skills-container .stack-container .stack .button span img {
+  height: 19px;
   aspect-ratio: auto;
-  margin-left: 1rem;
+  font-size: 19px;
+  color: #ffffff;
 }
-.skills-container .code-icons {
-  margin-bottom: 2rem;
+.skills-container .stack-container .stack .button span p {
+  padding-bottom: 2px;
+  font-size: 15px;
+  color: #cfcfcf;
 }
-.skills-container .tool-icons {
-  margin-bottom: 2rem;
+.skills-container .stack-container button {
+  margin-top: 20px;
+  border-radius: 3px;
+  padding: 6px 11px 7px 11px;
+  border: 1px solid #777777;
+  background-color: #1d2629;
+  color: #ffffff;
+  transition: background-color, border-color 0.3s;
+}
+.skills-container .stack-container button:hover {
+  background-color: #df0808;
+  border-color: #ffffff;
 }
 
 .projects-container {
-  margin-top: 10vh;
+  width: 100%;
   height: 100%;
+  margin: 24vh 0;
   padding-top: 10rem;
 }
 .projects-container h1 {
   color: #ffffff;
   font-size: 35px;
   margin-bottom: 3rem;
+  font-weight: 500;
+  text-align: center;
 }
-
-.widgets {
-  margin-top: 5rem;
-  width: 100%;
-  height: 35rem;
-  flex-direction: row;
+.projects-container .project-container {
   display: flex;
+  align-items: center;
+  min-height: 150px;
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #273134;
+  background-color: #1d2629;
+}
+.projects-container .project-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 2px solid #273134;
+}
+.projects-container .project-container .info {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.widgets .graphicsWidget {
-  width: 30rem;
+.projects-container .project-container .info .text {
+  margin-top: 3px;
+  margin-right: 15%;
 }
-.widgets .graphicsWidget a {
+.projects-container .project-container .info .text h2 {
   color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1vh;
 }
-.widgets .codingWidget {
-  width: 30rem;
+.projects-container .project-container .info .text p {
+  color: #cfcfcf;
+  font-size: 1.1rem;
 }
-.widgets .codingWidget a {
-  color: #ffffff;
+.projects-container .project-container .info .tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
 }
-.widgets h1 {
-  color: #ffffff;
-  font-size: xx-large;
+.projects-container .project-container .info .tools i {
+  margin-top: 10px;
+  line-height: 15px;
+  margin-right: 10px;
+  padding: 3px 10px;
+  border: 1px solid #777777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #343c3e;
+  border-radius: 5px;
+  font-size: 12.5px;
+  color: #cfcfcf;
+}
+.projects-container .project-container:hover {
+  background-color: #343c3e;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -363,10 +460,13 @@ html, body {
   }
   .newNavBar .navigation li a {
     color: #ffffff;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 1px;
+  }
+  .about {
+    margin-top: 0;
   }
   .about .introduction {
     margin-top: 5rem;
@@ -442,24 +542,23 @@ html, body {
     display: none;
   }
   .about .introduction {
-    margin-top: 3rem;
     height: 30%;
   }
   .about .introduction .left .introTextContainer .introText h1 {
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 400;
   }
   .about .introduction .left .introTextContainer .introText h1 strong {
-    font-size: 20px;
+    font-size: 35px;
     font-weight: 600;
   }
   .about .introduction .left .introTextContainer .introText h2 {
-    font-size: 20px;
+    margin-top: 1rem;
+    font-size: 30px;
+    line-height: 30px;
   }
   .about .introduction .left .introTextContainer .introText p {
-    margin: 1rem 0 4rem 0;
-    font-size: 15px;
-    line-height: 1.5rem;
+    font-size: 23px;
   }
   .about .introduction .left .introButtonContainer {
     display: none;
@@ -470,6 +569,17 @@ html, body {
     height: 20rem;
   }
   .about .introduction .footer .footerBorder {
+    display: none;
+  }
+  .skills-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .projects-container {
+    padding-top: 0;
+    padding-bottom: 10vh;
+  }
+  .projects-container .project-container img {
     display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,10 +1,15 @@
 $primaryBlack: #111316;
+$widget: #1d2629;
 $navBar: #0a0c0e;
 $white: #ffffff;
 $white2: #939393;
 $white3: #777777;
+$white4: #41474c;
 $secondaryWhite: #cfcfcf;
 $red1: #f33434;
+$red2: #df0808;
+$tag: #343c3e;
+$border: #273134;
 
 * {
   margin: 0;
@@ -31,26 +36,8 @@ html, body {
   color: $white;
   font-size: 35px;
   margin-bottom: 3rem;
-}
-
-@mixin subtitle {
-  color: $white;
-  font-size: 25px;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-}
-
-@mixin section {
-  margin-top: 10vh;
-  height: 100%;
-  padding-top: 10rem;
-}
-
-@mixin widget {
-  width: 30rem;
-}
-@mixin widgetButton {
-  color: $white;
+  font-weight: 500;
+  text-align: center;
 }
 @mixin line {
   width: 0.15rem;
@@ -97,24 +84,21 @@ html, body {
     align-items: center;
     .logo {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      height: 55px;
+      height: 6vh;
       img {
-        width: 50px;
-        height: 50px;
-        margin-right: 30px;
-        border-radius: 30px;
-        border: 3px solid $white3;
+        width: 5.5vh;
+        height: 5.5vh;
+        margin-right: 3vh;
+        border-radius: 5.5vh;
+        border: 0.35vh solid $white3;
         transition: border-color 0.2s ease-in-out;
       }
       h1 {
-        padding-top: 8px;
-        display: flex;
-        align-items: flex-start;
+        line-height: 5.2vh;
         height: 100%;
         color: $white2;
-        font-size: 30px;
+        font-size: 3vh;
         font-weight: 500;
         transition: color 0.2s ease-in-out;
         user-select: none;
@@ -140,21 +124,20 @@ html, body {
         list-style-type: none;
         a {
           color: $white;
-          font-size: 18px;
+          font-size: 2vh;
           font-weight: 500;
           margin-left: 5vw;
           text-decoration: none;
           position: relative;
-          letter-spacing: 0.5px;
           user-select: none;
-          padding-bottom: 5px;
+          padding-bottom: 0.5vh;
         }
         a:after {
           content: '';
           position: absolute;
           width: 100%;
           transform: scaleX(0);
-          height: 3px;
+          height: 0.3vh;
           bottom: 0;
           left: 0;
           background-color: $white;
@@ -177,68 +160,13 @@ html, body {
 /* ---------------- INTRODUCTION ---------------- */
 
 .about {
-  margin-top: 18%;
-  height: 60%;
+  margin-top: 25vh;
+  height: 60vh;
   .introduction {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 35rem;
-    .right {
-      height: 100%;
-      .introLinksContainer {
-        height: 100%;
-        .introLinks {
-          height: 100%;
-          .top {
-            .introLine {
-              @include line;
-              height: 2rem;
-            }
-            .linkButton {
-              margin-top: 1rem;
-              transition: all 0.1s ease-in;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              background-color: $primaryBlack;
-              margin-bottom: 1.4rem;
-              border-radius: 30px;
-              border: 3px solid $white3;
-              height: 30px;
-              width: 30px;
-              i {
-                transition: all 0.1s ease-in;
-                background-color: $primaryBlack;
-                color: $white3;
-                border-radius: 30px;
-              }
-              .fa-github {
-                margin-top: 1.8px;
-                font-size: 20px;
-              }
-              .fa-linkedin-in {
-                margin-top: 1.7px;
-              }
-            }
-            .linkButton:hover {
-              transform: translate(0, -5px);
-              border-color: $white;
-              i {
-                color: $white;
-              }
-            }
-          }
-          .bottom {
-            height: 55%;
-            .introLastLine {
-              @include line;
-              height: 100%;
-            }
-          }
-        }
-      }
-    }
     .left {
       height: 100%;
       .introTextContainer {
@@ -311,63 +239,220 @@ html, body {
         }
       }
     }
+    .right {
+      height: 100%;
+      .introLinksContainer {
+        height: 100%;
+        .introLinks {
+          height: 100%;
+          .top {
+            .introLine {
+              @include line;
+              height: 2rem;
+            }
+            a {
+              text-decoration: none;
+              .linkButton {
+                margin-top: 1rem;
+                transition: all 0.1s ease-in;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $primaryBlack;
+                margin-bottom: 1.4rem;
+                border-radius: 30px;
+                border: 3px solid $white3;
+                height: 30px;
+                width: 30px;
+                i {
+                  text-decoration: none;
+                  transition: all 0.1s ease-in;
+                  background-color: $primaryBlack;
+                  color: $white3;
+                  border-radius: 30px;
+                }
+                .fa-github {
+                  margin-top: 1.8px;
+                  font-size: 20px;
+                }
+                .fa-linkedin-in {
+                  margin-top: 1.7px;
+                }
+              }
+              .linkButton:hover {
+                transform: translate(0, -5px);
+                border-color: $white;
+                i {
+                  color: $white;
+                }
+              }
+            }
+          }
+          .bottom {
+            height: 55%;
+            .introLastLine {
+              @include line;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .skills-container {
-  @include section;
-  
+  width: 100%;
+  height: 100%;
+  margin-top: 10vh;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h1 {
     @include title;
   }
-  h2 {
-    @include subtitle;
-  }
-  .skills-body {
-    i, img {
-      height: 4rem;
-      color: white;
-      font-size: 4rem;
-      aspect-ratio: auto;
-      margin-left: 1rem
+  .stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: $widget;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid $border;
+    margin-bottom: 5vh;
+    h2 {
+      color: $white;
+      font-size: 25px;
+      margin-bottom: 1rem;
+      font-weight: 500;
     }
-  }
-  .code-icons {
-    margin-bottom: 2rem;
-  }
-  .tool-icons {
-    margin-bottom: 2rem;
-  }
-}
-.projects-container {
-  @include section;
-  h1 {
-    @include title;
+    .stack {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .button {
+        margin-top: 10px;
+        border: 1px solid $white4;
+        height: 27px;
+        display: flex;
+        justify-content: space-between;
+        background-color: $tag;
+        border-radius: 8px 20px 20px 8px;
+        margin-right: 10px;
+        span {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 27px;
+          border-radius: 5px 0 0 5px;
+          margin-right: 7px;
+          .resize {
+            height: 10px;
+          }
+          i, img {
+            height: 19px;
+            aspect-ratio: auto;
+            font-size: 19px;
+            color: $white;
+          }
+          p {
+            padding-bottom: 2px;
+            font-size: 15px;
+            color: $secondaryWhite;
+          }
+        }
+      }
+    }
+    button {
+      margin-top: 20px;
+      border-radius: 3px;
+      padding: 6px 11px 7px 11px;
+      border: 1px solid $white3;
+      background-color: $widget;
+      color: $white;
+      transition: background-color, border-color 0.3s;
+    }
+    button:hover {
+      background-color: $red2;
+      border-color: $white;
+    }
   }
 }
 
-.widgets {
-  margin-top: 5rem;
+.projects-container {
   width: 100%;
-  height: 35rem;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-  .graphicsWidget {
-    @include widget;
-    a {
-      @include widgetButton;
-    }
-  }
-  .codingWidget {
-    @include widget;
-    a {
-      @include widgetButton;
-    }
-  }
+  height: 100%;
+  margin: 24vh 0;
+  padding-top: 10rem;
   h1 {
-    color: $white;
-    font-size: xx-large;
+    @include title;
+  }
+  .project-container {
+    display: flex;
+    align-items: center;
+    min-height: 150px;
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid $border;
+    background-color: $widget;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      margin-right: 20px;
+      border: 2px solid $border;
+    }
+    .info {
+      width: 100%;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .text {
+        margin-top: 3px;
+        margin-right: 15%;
+        h2 {
+          color: $white;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin-bottom: 1vh;
+        }
+        p {
+          color: $secondaryWhite;
+          font-size: 1.1rem;
+        }
+      }
+      .tools {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 3px;
+        i {
+          margin-top: 10px;
+          line-height: 15px;
+          margin-right: 10px;
+          padding: 3px 10px;
+          border: 1px solid $white3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $tag;
+          border-radius: 5px;
+          font-size: 12.5px;
+          color: $secondaryWhite;
+        }
+      }
+    }
+  }
+  .project-container:hover {
+    background-color: $tag;
   }
 }
 
@@ -394,7 +479,7 @@ html, body {
         list-style-type: none;
         a {
           color: $white;
-          font-size: 17px;
+          font-size: 20px;
           font-weight: 500;
           text-decoration: none;
           letter-spacing: 1px;
@@ -404,6 +489,7 @@ html, body {
   }
 
   .about {
+    margin-top: 0;
     .introduction {
       margin-top: 5rem;
       height: 50%;
@@ -485,26 +571,25 @@ html, body {
 
   .about {
     .introduction {
-      margin-top: 3rem;
       height: 30%;
       .left {
         .introTextContainer {
           .introText {
             h1 {
-              font-size: 15px;
+              font-size: 25px;
               font-weight: 400;
               strong {
-                font-size: 20px;
+                font-size: 35px;
                 font-weight: 600;
               }
             }
             h2 {
-              font-size: 20px;
+              margin-top: 1rem;
+              font-size: 30px;
+              line-height: 30px;
             }
             p {
-              margin: 1rem 0 4rem 0;
-              font-size: 15px;
-              line-height: 1.5rem;
+              font-size: 23px;
             }
           }
         }
@@ -523,6 +608,19 @@ html, body {
     }
   }
 
-  
+  .skills-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .projects-container {
+    padding-top: 0;
+    padding-bottom: 10vh;
+    .project-container {
+      img {
+        display: none;
+      }
+    }
+  }
 }
 
